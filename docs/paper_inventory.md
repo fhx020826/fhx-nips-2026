@@ -87,10 +87,48 @@
 | 已核实 | 2024 | RoomTour3D: Geometry-Aware Video-Instruction Tuning for Embodied Navigation | 强相关（dataset） | RoomTour3D | dataset, video instruction, geometry-aware tuning | dataset / pretraining corpus | 数据与 video-instruction tuning 参考 | https://arxiv.org/abs/2412.08591 | 数据和预训练资源层面的重要补充 |
 | 已核实 | 2023 | Towards Learning a Generalist Model for Embodied Navigation | 强相关（foundation） | multi-task embodied navigation | generalist, schema instruction, unified interface | generalist embodied navigation | foundation navigation 参考 | https://arxiv.org/abs/2312.02010 | foundation 路线不能遗漏 |
 | 已核实 | 2025 | IndoorUAV: Benchmarking Vision-Language UAV Navigation in Continuous Indoor Environments | 强相关（benchmark） | IndoorUAV-VLN / IndoorUAV-VLA | benchmark, indoor UAV, continuous indoor VLN | benchmark + method | 连续室内 VLN benchmark 扩展 | https://arxiv.org/abs/2512.19024 | 虽是 UAV，但属于同问题空间的连续 VLN 扩展 |
+| 已核实 | 2025 | DyNaVLM: Zero-Shot Vision-Language Navigation System with Dynamic Viewpoints and Self-Refining Graph Memory | 强相关（zero-shot） | GOAT / ObjectNav / real-world | dynamic viewpoint, graph memory, training-free | graph memory + VLM | zero-shot memory / graph 参考 | https://arxiv.org/abs/2506.15096 | 虽非主 benchmark，但与 zero-shot continuous navigation 很贴近 |
+| 已核实 | 2025 | VLN-Zero: Rapid Exploration and Cache-Enabled Neurosymbolic Vision-Language Planning for Zero-Shot Transfer in Robot Navigation | 强相关（zero-shot） | robot navigation benchmarks | neurosymbolic planning, cache, zero-shot | scene graph + planner | zero-shot planning 参考 | https://arxiv.org/abs/2509.18592 | 零样本 neurosymbolic 路线值得保留 |
+| 已核实 | 2025 | JanusVLN: Decoupling Semantics and Spatiality with Dual Implicit Memory for Vision-Language Navigation | 强相关（memory） | VLN benchmarks | dual implicit memory, semantic-spatial decoupling | implicit memory | memory 新范式参考 | https://arxiv.org/abs/2509.22548 | 2025 memory 路线很新的代表作 |
+| 已核实 | 2025 | InternVLA-N1: An Open Dual-System Vision-Language Navigation Foundation Model with Learned Latent Plans | 强相关（foundation） | navigation foundation benchmarks | dual-system, latent plans | foundation model | foundation navigation 参考 | https://internrobotics.github.io/internvla-n1.github.io/static/pdfs/InternVLA_N1.pdf | 双系统 foundation 导航工作，需重点关注 |
+| 已核实 | 2026 | HiMemVLN: Enhancing Reliability of Open-Source Zero-Shot Vision-and-Language Navigation with Hierarchical Memory System | 强相关（zero-shot） | simulated + real-world VLN | hierarchical memory, open-source LLM, reliability | hierarchical memory system | open-source zero-shot memory 参考 | https://arxiv.org/abs/2603.14807 | 2026 新增 memory/reliability 路线 |
 | 已核实 | 2020 | RxR: Multilingual Guided Vision-and-Language Navigation via Benchmark Translation | 强相关（benchmark lineage） | RxR | multilingual instruction benchmark | dataset / benchmark | RxR-CE 的语言数据来源 | https://arxiv.org/abs/2010.07954 | 连续 RxR-CE 的上游 benchmark，必须保留 |
 | 已核实 | 2018 | Room-to-Room: Vision-and-Language Navigation with Matterport3D | 强相关（benchmark lineage） | R2R | benchmark, instruction following | dataset / benchmark | R2R-CE 的上游 benchmark | https://arxiv.org/abs/1711.07280 | 整个赛道的起点之一 |
 | 已核实 | 2019 | Habitat: A Platform for Embodied AI Research | 强相关（platform） | Habitat | simulator, embodied platform | simulator / platform | continuous VLN-CE 所依赖的平台基础 | https://arxiv.org/abs/1904.01201 | continuous 环境实验平台基础工作 |
 | 已核实 | 2021 | Habitat 2.0: Training Home Assistants to Rearrange their Habitat | 强相关（platform） | Habitat 2.0 | simulator, embodied benchmark | simulator / platform | Habitat 平台演进背景 | https://arxiv.org/abs/2106.14405 | 虽非 VLN 专属，但平台演进相关 |
+
+---
+
+## B3. VLN 方法演进链（离散/上游，但与当前任务高度相关）
+
+| 状态 | 年份 | 论文 | 类型 | 数据集/基准 | 关键词 | 方法范式 | 作用 | 来源 | 当前判断 |
+|---|---:|---|---|---|---|---|---|---|---|
+| 已核实 | 2018 | Speaker-Follower Models for Vision-and-Language Navigation | 强相关（method lineage） | R2R | speaker-follower, search | seq2seq + speaker reranking | 早期经典 baseline | https://arxiv.org/abs/1806.02724 | 经典祖先工作，必须保留 |
+| 已核实 | 2019 | Robust Navigation with Language Pretraining and Stochastic Sampling | 强相关（method lineage） | R2R | pretraining, stochastic sampling | pretrained navigation | 预训练路线早期代表 | https://arxiv.org/abs/1909.02244 | strong baseline，后续常被比较 |
+| 已核实 | 2020 | Towards Learning a Generic Agent for Vision-and-Language Navigation via Pre-Training | 强相关（method lineage） | R2R / RxR | pretraining | PREVALENT | 预训练范式关键工作 | https://arxiv.org/abs/2002.10638 | 后续许多工作都会对比 |
+| 已核实 | 2020 | Active Visual Information Gathering for Vision-Language Navigation | 强相关（method lineage） | R2R | active exploration, uncertainty | active exploration | exploration / recovery 参考 | https://arxiv.org/abs/2007.08037 | 与 continuous 中探索和恢复相关 |
+| 已核实 | 2020 | Vision-Language Navigation with Self-Supervised Auxiliary Reasoning Tasks | 强相关（method lineage） | R2R | auxiliary reasoning, progress | auxiliary reasoning | progress / reasoning 参考 | https://openaccess.thecvf.com/content_CVPR_2020/papers/Zhu_Vision-Language_Navigation_With_Self-Supervised_Auxiliary_Reasoning_Tasks_CVPR_2020_paper.pdf | progress 学习链条应保留 |
+| 已核实 | 2020 | Improving Vision-and-Language Navigation with Image-Text Pairs from the Web | 强相关（method lineage） | R2R | web data, grounding | web pretraining | 数据扩展思路参考 | https://arxiv.org/abs/2004.14973 | 数据增强链条重要一环 |
+| 已核实 | 2020 | Hierarchical Cross-Modal Agent for Robotics Vision-and-Language Navigation | 强相关（method lineage） | robotics VLN | hierarchical, subgoal, low-level control | hierarchical agent | 连续 VLN 双层架构早期代表 | https://arxiv.org/abs/2104.10674 | 与当前问题定义高度契合 |
+| 已核实 | 2021 | VLN-BERT: A Recurrent Vision-and-Language BERT for Navigation | 强相关（method lineage） | R2R | recurrent VLN-BERT | recurrent transformer | VLN backbone 关键工作 | https://openaccess.thecvf.com/content/CVPR2021/papers/Hong_VLN_BERT_A_Recurrent_Vision-and-Language_BERT_for_Navigation_CVPR_2021_paper.pdf | backbone 链条重要工作 |
+| 已核实 | 2021 | History Aware Multimodal Transformer for Vision-and-Language Navigation | 强相关（method lineage） | R2R / RxR | history transformer, multimodal memory | HAMT | history 建模经典工作 | https://proceedings.neurips.cc/paper/2021/file/2e5c2cb8d13e8fba78d95211440ba326-Paper.pdf | history / memory 祖先工作 |
+| 已核实 | 2021 | SOAT: A Scene- and Object-Aware Transformer for Vision-and-Language Navigation | 强相关（method lineage） | R2R | scene/object aware transformer | transformer + object awareness | scene/object modeling 参考 | https://arxiv.org/abs/2110.14143 | solid transformer baseline |
+| 已核实 | 2021 | The Road to Know-Where: An Object-and-Room Informed Sequential BERT for Indoor Vision-Language Navigation | 强相关（method lineage） | R2R | room/object reasoning | ORIST | room-object reasoning 参考 | https://openaccess.thecvf.com/content/ICCV2021/papers/Qi_The_Road_To_Know-Where_An_Object-and-Room_Informed_Sequential_BERT_for_ICCV_2021_paper.pdf | room/object 结构化先验代表 |
+| 已核实 | 2021 | Vision-Language Navigation with Random Environmental Mixup | 强相关（method lineage） | R2R | augmentation, generalization | environment mixup | 泛化增强链条参考 | https://openaccess.thecvf.com/content/ICCV2021/papers/Liu_Vision-Language_Navigation_With_Random_Environmental_Mixup_ICCV_2021_paper.pdf | 泛化相关工作 |
+| 已核实 | 2022 | HOP: History-and-Order Aware Pre-Training for Vision-and-Language Navigation | 强相关（method lineage） | R2R / RxR | history, order-aware pretraining | pretraining | history pretraining 代表作 | https://ieeexplore.ieee.org/document/9880046 | history 预训练路线重要工作 |
+| 已核实 | 2022 | LOViS: Learning Orientation and Visual Signals for Vision and Language Navigation | 强相关（method lineage） | R2R | orientation, visual signals | orientation-aware model | 朝向建模参考 | https://aclanthology.org/2022.coling-1.505.pdf | orientation 建模链条 |
+| 已核实 | 2022 | Visual-Language Navigation Pretraining via Prompt-based Environmental Self-exploration | 强相关（method lineage） | R2R / RxR | prompt, self-exploration | prompt-based pretraining | 环境自探索预训练 | https://arxiv.org/abs/2203.04006 | pretraining 思路补充 |
+| 已核实 | 2022 | Target-Driven Structured Transformer Planner for Vision-Language Navigation | 强相关（method lineage） | R2R | structured planner | structured transformer planner | planner 设计参考 | https://arxiv.org/abs/2207.11201 | structured planning 路线 |
+| 已核实 | 2022 | CLIP-Nav: Using CLIP for Zero-Shot Vision-and-Language Navigation | 强相关（method lineage） | R2R | CLIP, zero-shot | CLIP-based zero-shot | zero-shot 链条前置参考 | https://arxiv.org/abs/2211.16649 | zero-shot continuous work 的上游参考 |
+| 已核实 | 2022 | Diagnosing Vision-and-Language Navigation: What Really Matters | 强相关（analysis） | R2R | diagnosis, evaluation | analysis | 误差分析与评价参考 | https://aclanthology.org/2022.naacl-main.438.pdf | 评价分析工作不能漏 |
+| 已核实 | 2023 | Adaptive Zone-aware Hierarchical Planner for Vision-Language Navigation | 强相关（method lineage） | R2R | hierarchical planner | zone-aware hierarchical planning | hierarchical planning 参考 | https://openaccess.thecvf.com/content/CVPR2023/papers/Gao_Adaptive_Zone-Aware_Hierarchical_Planner_for_Vision-Language_Navigation_CVPR_2023_paper.pdf | 与 continuous 分层控制直接相关 |
+| 已核实 | 2023 | Bird's-Eye-View Scene Graph for Vision-Language Navigation | 强相关（method lineage） | R2R | BEV scene graph | scene graph | spatial graph 参考 | https://arxiv.org/abs/2308.04758 | 与 SpatialNav / topo 路线相关 |
+| 已核实 | 2023 | Masked Path Modeling for Vision-and-Language Navigation | 强相关（method lineage） | R2R | masked path | masked modeling | path modeling 参考 | https://arxiv.org/abs/2305.14268 | 路径建模工作 |
+| 已核实 | 2023 | Improving Vision-and-Language Navigation by Generating Future-View Image Semantics | 强相关（method lineage） | R2R | future view semantics | future prediction | future-view 链条前置工作 | https://arxiv.org/abs/2304.04907 | 与 lookahead / imagination 路线直接相关 |
+| 已核实 | 2023 | A New Path: Scaling Vision-and-Language Navigation with Synthetic Instructions and Imitation Learning | 强相关（method lineage） | R2R / RxR | synthetic instruction, scaling | scaling with synthetic data | 数据扩展与规模化训练 | https://arxiv.org/abs/2210.03112 | scale 路线参考 |
+| 已核实 | 2023 | Lana: A Language-Capable Navigator for Instruction Following and Generation | 强相关（method lineage） | R2R | follow and generate | navigator-generator | 指令生成/跟随统一 | https://arxiv.org/abs/2303.08409 | follow+generate 路线 |
+| 已核实 | 2023 | KERM: Knowledge Enhanced Reasoning for Vision-and-Language Navigation | 强相关（method lineage） | R2R | knowledge reasoning | knowledge enhanced reasoning | reasoning 路线参考 | https://openaccess.thecvf.com/content/CVPR2023/papers/Li_KERM_Knowledge_Enhanced_Reasoning_for_Vision-and-Language_Navigation_CVPR_2023_paper.pdf | reasoning 增强工作 |
+| 已核实 | 2023 | PASTS: Progress-Aware Spatio-Temporal Transformer Speaker for Vision-and-Language Navigation | 强相关（method lineage） | R2R | progress-aware, speaker | progress-aware speaker | progress 路线延伸 | https://arxiv.org/abs/2305.11918 | progress 相关工作 |
 
 ---
 
@@ -126,6 +164,8 @@
 6. RoomTour3D
 7. RxR / R2R
 8. Habitat / Habitat 2.0
+9. DyNaVLM / VLN-Zero / HiMemVLN
+10. InternVLA-N1 / JanusVLN
 
 ### C2. 第二梯队
 
