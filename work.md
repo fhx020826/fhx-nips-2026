@@ -24,6 +24,12 @@
    - `conda run -n fhx-nips-2026 python --version` 返回 `Python 3.10.20`
 6. 新增统一代理脚本：
    - `scripts/proxy_exec.sh`
+7. 新增 HPC 使用摘要文档：
+   - `docs/hpc_handbook.md`
+8. 明确当前开发模式：
+   - 本机 Windows
+   - 远端 Linux HPC 跳板机/集群
+   - 重负载任务后续统一走 SLURM/计算节点
 
 ### 当前阻塞
 
