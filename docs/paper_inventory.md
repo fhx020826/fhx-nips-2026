@@ -52,8 +52,10 @@
 | 已核实 | 2024 | Constraint-Aware Zero-Shot Vision-Language Navigation in Continuous Environments | 直接命中 | R2R-CE / RxR-CE | zero-shot, sub-instruction, constraints, progress | constraint-aware planner | zero-shot / progress / subgoal 参考 | https://arxiv.org/abs/2412.10137 | 很值得重点深读，和 progress / bridge 直接相关 |
 | 已核实 | 2024 | Open-Nav: Exploring Zero-Shot Vision-and-Language Navigation in Continuous Environment with Open-Source LLMs | 直接命中 | VLN-CE / real-world | zero-shot, CoT, progress estimation | open-source LLM reasoning | zero-shot reasoning scaffold 参考 | https://arxiv.org/abs/2409.18794 | open-source LLM zero-shot continuous VLN 的代表工作 |
 | 已核实 | 2025 | Ground-level Viewpoint Vision-and-Language Navigation in Continuous Environments | 直接命中 | continuous VLN benchmarks | viewpoint gap, scale, embodied height | viewpoint adaptation | 低视角/真机视角缺口参考 | https://arxiv.org/abs/2502.19024 | 对真实机器人视角偏差问题重要 |
+| 已核实 | 2025 | TRAVEL: Training-Free Retrieval and Alignment for Vision-and-Language Navigation | 直接命中 | R2R-Habitat | training-free, retrieval, alignment, topo map | modular retrieval-alignment | training-free / map-retrieval 路线参考 | https://arxiv.org/abs/2502.07306 | 虽依赖环境模型，但仍在同问题空间内 |
 | 已核实 | 2025 | LaViRA: Language-Vision-Robot Actions Translation for Zero-Shot Vision Language Navigation in Continuous Environments | 直接命中 | VLN-CE | zero-shot, hierarchical control, robot action translation | hierarchical planner-controller | 真机部署 / 零样本 bridge 参考 | https://arxiv.org/abs/2510.19655 | 典型“大模型高层 + 小模型感知/控制”结构 |
 | 已核实 | 2025 | NavMorph: A Self-Evolving World Model for Vision-and-Language Navigation in Continuous Environments | 直接命中 | VLN-CE benchmarks | world model, evolution memory | self-evolving world model | world-model 路线新作 | https://arxiv.org/abs/2506.23468 | 2025 新增 world-model 方向，需重点跟踪 |
+| 已核实 | 2025 | VLN-R1: Vision-Language Navigation via Reinforcement Fine-Tuning | 直接命中 | VLN-CE benchmark | LVLM, RFT, time-decayed reward, long-short memory sampling | end-to-end LVLM + RFT | reasoning/RFT 路线参考 | https://arxiv.org/abs/2506.17221 | 直接把 RFT 用到连续 VLN，值得保留 |
 | 已核实 | 2025 | StreamVLN: Streaming Vision-and-Language Navigation via SlowFast Context Modeling | 直接命中 | VLN-CE benchmarks | streaming, slow-fast memory, low latency | streaming VLN | history compression / streaming inference 参考 | https://arxiv.org/abs/2507.05240 | history 压缩与在线推理的重要新作 |
 | 已核实 | 2025 | monoVLN: Bridging the Observation Gap between Monocular and Panoramic Vision and Language Navigation | 直接命中 | R2R-CE / RxR-CE | monocular, observation gap, uncertainty | monocular VLN | 单目设定与观测缺口参考 | https://papers.cool/venue/Lu_monoVLN_Bridging_the_Observation_Gap_between_Monocular_and_Panoramic_Vision%40ICCV2025%40CVF | 虽是单目设定，但对观测缺口问题有价值 |
 | 已核实 | 2025 | MonoDream: Monocular Vision-Language Navigation with Panoramic Dreaming | 直接命中 | R2R-CE / RxR-CE | monocular, panoramic dreaming | monocular + latent panoramic completion | 观测补全 / latent bridge 参考 | https://www.sciencestack.ai/paper/2508.02549 | 单目 VLN-CE 新方向，需进一步核实正式页 |
@@ -84,6 +86,7 @@
 | 已核实 | 2026 | NavTrust: Benchmarking Trustworthiness for Embodied Navigation | 强相关（benchmark） | NavTrust | robustness, corruptions, trustworthiness | benchmark | continuous VLN robustness benchmark 参考 | https://arxiv.org/abs/2603.19229 | 虽非纯 VLN-CE 专用，但对鲁棒性评测很重要 |
 | 已核实 | 2024 | RoomTour3D: Geometry-Aware Video-Instruction Tuning for Embodied Navigation | 强相关（dataset） | RoomTour3D | dataset, video instruction, geometry-aware tuning | dataset / pretraining corpus | 数据与 video-instruction tuning 参考 | https://arxiv.org/abs/2412.08591 | 数据和预训练资源层面的重要补充 |
 | 已核实 | 2023 | Towards Learning a Generalist Model for Embodied Navigation | 强相关（foundation） | multi-task embodied navigation | generalist, schema instruction, unified interface | generalist embodied navigation | foundation navigation 参考 | https://arxiv.org/abs/2312.02010 | foundation 路线不能遗漏 |
+| 已核实 | 2025 | IndoorUAV: Benchmarking Vision-Language UAV Navigation in Continuous Indoor Environments | 强相关（benchmark） | IndoorUAV-VLN / IndoorUAV-VLA | benchmark, indoor UAV, continuous indoor VLN | benchmark + method | 连续室内 VLN benchmark 扩展 | https://arxiv.org/abs/2512.19024 | 虽是 UAV，但属于同问题空间的连续 VLN 扩展 |
 
 ---
 
@@ -128,6 +131,8 @@
 6. Sim-2-Sim Transfer
 7. RxR-Habitat Competition Winner
 8. Graph based Environment Representation
+9. VLN-R1
+10. TRAVEL
 
 ### C3. 扩展设定
 

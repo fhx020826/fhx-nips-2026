@@ -21,27 +21,29 @@
 14. 2025-08 | MonoDream: Monocular Vision-Language Navigation with Panoramic Dreaming | https://www.sciencestack.ai/paper/2508.02549
 15. 2025-08 | VPN: Visual Prompt Navigation | https://arxiv.org/abs/2508.01766
 16. 2025-07 | StreamVLN: Streaming Vision-and-Language Navigation via SlowFast Context Modeling | https://arxiv.org/abs/2507.05240
-17. 2025-06 | NavMorph: A Self-Evolving World Model for Vision-and-Language Navigation in Continuous Environments | https://arxiv.org/abs/2506.23468
-18. 2025-03 | HA-VLN: A Benchmark for Human-Aware Navigation in Discrete–Continuous Environments with Dynamic Multi-Human Interactions, Real-World Validation, and an Open Leaderboard | https://arxiv.org/abs/2503.14229
-19. 2025-02 | Ground-level Viewpoint Vision-and-Language Navigation in Continuous Environments | https://arxiv.org/abs/2502.19024
-20. 2025-01 | GC-VLN: Instruction as Graph Constraints for Training-free Vision-and-Language Navigation | https://openreview.net/forum?id=mjYKNIRqpy
-21. 2024-12 | Constraint-Aware Zero-Shot Vision-Language Navigation in Continuous Environments | https://arxiv.org/abs/2412.10137
-22. 2024-12 | RoomTour3D: Geometry-Aware Video-Instruction Tuning for Embodied Navigation | https://arxiv.org/abs/2412.08591
-23. 2024-09 | Open-Nav: Exploring Zero-Shot Vision-and-Language Navigation in Continuous Environment with Open-Source LLMs | https://arxiv.org/abs/2409.18794
-24. 2024-09 | Cog-GA: A Large Language Models-based Generative Agent for Vision-and-Language Navigation in Continuous Environments | https://arxiv.org/abs/2409.02522
-25. 2024-06 | Human-Aware Vision-and-Language Navigation: Bridging Simulation to Reality with Dynamic Human Interactions | https://arxiv.org/abs/2406.19236
-26. 2024-05 | Enhancing Large Language Models with RAG for Visual Language Navigation in Continuous Environments | https://www.mdpi.com/2079-9292/14/5/909/xml
-27. 2024-04 | Lookahead Exploration with Neural Radiance Representation for Continuous Vision-Language Navigation | https://arxiv.org/abs/2404.01943
-28. 2024-02 | NaVid: Video-based VLM Plans the Next Step for Vision-and-Language Navigation | https://arxiv.org/abs/2402.15852
-29. 2024-01 | Mind the Error! Detection and Localization of Instruction Errors in Vision-and-Language Navigation | https://github.com/intelligolabs/R2RIE-CE
-30. 2023-12 | Towards Learning a Generalist Model for Embodied Navigation | https://arxiv.org/abs/2312.02010
-31. 2023-11 | Safe-VLN: Collision Avoidance for Vision-and-Language Navigation of Autonomous Robots Operating in Continuous Environments | https://arxiv.org/abs/2311.02817
-32. 2023-07 | GridMM: Grid Memory Map for Vision-and-Language Navigation | https://arxiv.org/abs/2307.12907
-33. 2023-04 | ETPNav: Evolving Topological Planning for Vision-Language Navigation in Continuous Environments | https://arxiv.org/abs/2304.03047
-34. 2023-03 | DREAMWALKER: Mental Planning for Continuous Vision-and-Language Navigation | https://openaccess.thecvf.com/content/ICCV2023/papers/Wang_DREAMWALKER_Mental_Planning_for_Continuous_Vision-Language_Navigation_ICCV_2023_paper.pdf
-35. 2023-01 | Graph based Environment Representation for Vision-and-Language Navigation in Continuous Environments | https://arxiv.org/abs/2301.04352
-36. 2022-08 | Iterative Vision-and-Language Navigation in Continuous Environments | https://github.com/jacobkrantz/IVLN-CE
-37. 2022-06 | 1st Place Solutions for RxR-Habitat Vision-and-Language Navigation Competition (CVPR 2022) | https://arxiv.org/abs/2206.11610
-38. 2022-04 | Sim-2-Sim Transfer for Vision-and-Language Navigation in Continuous Environments | https://arxiv.org/abs/2204.09667
-39. 2022-03 | Cross-modal Map Learning for Vision and Language Navigation | https://arxiv.org/abs/2203.05137
-40. 2020-04 | Beyond the Nav-Graph: Vision-and-Language Navigation in Continuous Environments | https://arxiv.org/abs/2004.02857
+17. 2025-06 | VLN-R1: Vision-Language Navigation via Reinforcement Fine-Tuning | https://arxiv.org/abs/2506.17221
+18. 2025-06 | NavMorph: A Self-Evolving World Model for Vision-and-Language Navigation in Continuous Environments | https://arxiv.org/abs/2506.23468
+19. 2025-03 | HA-VLN: A Benchmark for Human-Aware Navigation in Discrete–Continuous Environments with Dynamic Multi-Human Interactions, Real-World Validation, and an Open Leaderboard | https://arxiv.org/abs/2503.14229
+20. 2025-02 | Ground-level Viewpoint Vision-and-Language Navigation in Continuous Environments | https://arxiv.org/abs/2502.19024
+21. 2025-02 | TRAVEL: Training-Free Retrieval and Alignment for Vision-and-Language Navigation | https://arxiv.org/abs/2502.07306
+22. 2025-01 | GC-VLN: Instruction as Graph Constraints for Training-free Vision-and-Language Navigation | https://openreview.net/forum?id=mjYKNIRqpy
+23. 2024-12 | Constraint-Aware Zero-Shot Vision-Language Navigation in Continuous Environments | https://arxiv.org/abs/2412.10137
+24. 2024-12 | RoomTour3D: Geometry-Aware Video-Instruction Tuning for Embodied Navigation | https://arxiv.org/abs/2412.08591
+25. 2024-09 | Open-Nav: Exploring Zero-Shot Vision-and-Language Navigation in Continuous Environment with Open-Source LLMs | https://arxiv.org/abs/2409.18794
+26. 2024-09 | Cog-GA: A Large Language Models-based Generative Agent for Vision-and-Language Navigation in Continuous Environments | https://arxiv.org/abs/2409.02522
+27. 2024-06 | Human-Aware Vision-and-Language Navigation: Bridging Simulation to Reality with Dynamic Human Interactions | https://arxiv.org/abs/2406.19236
+28. 2024-05 | Enhancing Large Language Models with RAG for Visual Language Navigation in Continuous Environments | https://www.mdpi.com/2079-9292/14/5/909/xml
+29. 2024-04 | Lookahead Exploration with Neural Radiance Representation for Continuous Vision-Language Navigation | https://arxiv.org/abs/2404.01943
+30. 2024-02 | NaVid: Video-based VLM Plans the Next Step for Vision-and-Language Navigation | https://arxiv.org/abs/2402.15852
+31. 2024-01 | Mind the Error! Detection and Localization of Instruction Errors in Vision-and-Language Navigation | https://github.com/intelligolabs/R2RIE-CE
+32. 2023-12 | Towards Learning a Generalist Model for Embodied Navigation | https://arxiv.org/abs/2312.02010
+33. 2023-11 | Safe-VLN: Collision Avoidance for Vision-and-Language Navigation of Autonomous Robots Operating in Continuous Environments | https://arxiv.org/abs/2311.02817
+34. 2023-07 | GridMM: Grid Memory Map for Vision-and-Language Navigation | https://arxiv.org/abs/2307.12907
+35. 2023-04 | ETPNav: Evolving Topological Planning for Vision-Language Navigation in Continuous Environments | https://arxiv.org/abs/2304.03047
+36. 2023-03 | DREAMWALKER: Mental Planning for Continuous Vision-and-Language Navigation | https://openaccess.thecvf.com/content/ICCV2023/papers/Wang_DREAMWALKER_Mental_Planning_for_Continuous_Vision-Language_Navigation_ICCV_2023_paper.pdf
+37. 2023-01 | Graph based Environment Representation for Vision-and-Language Navigation in Continuous Environments | https://arxiv.org/abs/2301.04352
+38. 2022-08 | Iterative Vision-and-Language Navigation in Continuous Environments | https://github.com/jacobkrantz/IVLN-CE
+39. 2022-06 | 1st Place Solutions for RxR-Habitat Vision-and-Language Navigation Competition (CVPR 2022) | https://arxiv.org/abs/2206.11610
+40. 2022-04 | Sim-2-Sim Transfer for Vision-and-Language Navigation in Continuous Environments | https://arxiv.org/abs/2204.09667
+41. 2022-03 | Cross-modal Map Learning for Vision and Language Navigation | https://arxiv.org/abs/2203.05137
+42. 2020-04 | Beyond the Nav-Graph: Vision-and-Language Navigation in Continuous Environments | https://arxiv.org/abs/2004.02857
