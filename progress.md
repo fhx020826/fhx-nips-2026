@@ -20,3 +20,4 @@
 - 新增 `docs/paper_list_feishu.md` 作为飞书可直接粘贴列表
 - 补回 DualVLN 与 benchmark/setting 扩展条目，当前飞书列表扩至 31 条
 - 继续补回 Open-Nav / StreamVLN / DifNav / RoomTour3D / NaviLLM，当前飞书列表扩至 34 条
+- 新增 Sim-2-Sim / RxR-Habitat 竞赛方案 / graph env representation / CLASH，当前飞书列表扩至 40 条

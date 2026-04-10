@@ -68,6 +68,13 @@
    - DAgger Diffusion Navigation
    - RoomTour3D
    - NaviLLM
+16. 当前飞书列表已扩至 40 条，已覆盖：
+   - 任务起点
+   - 桥接/迁移
+   - 竞赛冠军方案
+   - topo / graph / memory / lookahead
+   - zero-shot / open-source LLM / large-small hierarchy
+   - diffusion / streaming / benchmark 扩展
 
 ### 当前阻塞
 
@@ -75,7 +82,7 @@
 2. 2025–2026 候选池还未系统扫全。
 3. 部分 2025 论文当前只完成了 paper 级别链接核实，项目页/代码页/正式录用信息还未补齐。
 4. 本轮最新本地提交还未成功 push，原因是代理链路发生 `gnutls_handshake` / 连接类瞬时错误。
-5. 当前飞书列表已扩到 34 条，但仍未达到目标规模。
+5. 当前飞书列表已扩到 40 条，但仍未达到目标规模。
 
 ### 当前判断
 

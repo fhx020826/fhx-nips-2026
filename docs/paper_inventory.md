@@ -38,7 +38,10 @@
 |---|---:|---|---|---|---|---|---|---|---|
 | 已核实 | 2020 | Beyond the Nav-Graph: Vision-and-Language Navigation in Continuous Environments | 直接命中 | VLN-CE / R2R-CE / RxR-CE | task setup, continuous control | 任务定义 | 必要起点 | https://arxiv.org/abs/2004.02857 | continuous VLN 的任务起点，必须保留 |
 | 已核实 | 2022 | Cross-modal Map Learning for Vision and Language Navigation | 直接命中 | VLN-CE | map, waypoint, explicit spatial representation | cross-modal map + waypoint | map-based baseline / 空间表示参考 | https://arxiv.org/abs/2203.05137 | 早期明确把空间表示做显式化，值得保留 |
+| 已核实 | 2022 | Sim-2-Sim Transfer for Vision-and-Language Navigation in Continuous Environments | 直接命中 | VLN-CE | transfer, discrete-to-continuous gap | sim-to-sim transfer | 任务范式迁移参考 | https://arxiv.org/abs/2204.09667 | 解释离散 VLN 到连续 VLN 性能鸿沟的重要工作 |
+| 已核实 | 2022 | 1st Place Solutions for RxR-Habitat Vision-and-Language Navigation Competition (CVPR 2022) | 直接命中 | RxR-Habitat / VLN-CE | modular plan-control, waypoint, tryout, history | modular planner-controller | competition SOTA / 强 baseline 参考 | https://arxiv.org/abs/2206.11610 | 竞赛冠军方案，工程与结构都重要 |
 | 已核实 | 2022 | Iterative Vision-and-Language Navigation in Continuous Environments | 直接命中（扩展设定） | IR2R-CE | persistent memory, iterative tours | memory-persistent VLN | memory 设定 / benchmark 扩展 | https://github.com/jacobkrantz/IVLN-CE | 如果后面要做长期记忆，这是重要旁支 |
+| 已核实 | 2023 | Graph based Environment Representation for Vision-and-Language Navigation in Continuous Environments | 直接命中 | VLN-CE | graph environment representation, object relation | graph environment representation | graph-based env modeling 参考 | https://arxiv.org/abs/2301.04352 | 图式环境表达路线，不应遗漏 |
 | 已核实 | 2023 | DREAMWALKER: Mental Planning for Continuous Vision-Language Navigation | 直接命中 | VLN-CE | world model, planning, MCTS | world-model planning | planning 结构参考 | https://openaccess.thecvf.com/content/ICCV2023/papers/Wang_DREAMWALKER_Mental_Planning_for_Continuous_Vision-Language_Navigation_ICCV_2023_paper.pdf | 2023 年很关键的 planning 路线 |
 | 已核实 | 2023 | GridMM: Grid Memory Map for Vision-and-Language Navigation | 直接命中 | R2R-CE | grid memory, history, map | grid memory map | history / map 参考 | https://arxiv.org/abs/2307.12907 | memory-map 路线代表作之一 |
 | 已核实 | 2023 | Safe-VLN: Collision Avoidance for Vision-and-Language Navigation of Autonomous Robots Operating in Continuous Environments | 直接命中 | R2R-CE | collision avoidance, recovery | waypoint + collision mitigation | obstacle avoidance / recovery 参考 | https://arxiv.org/abs/2311.02817 | 明确把碰撞问题当主问题处理，与你的判断一致 |
@@ -59,6 +62,7 @@
 | 已核实 | 2025 | ETP-R1: Evolving Topological Planning with Reinforcement Fine-tuning for Vision-Language Navigation in Continuous Environments | 直接命中 | VLN-CE | topo planning, reinforcement fine-tuning | topo planning + RFT | topo 路线后续工作 | https://huggingface.co/papers/2512.20940 | 是 ETP 路线的后续演进，值得持续关注 |
 | 已核实 | 2025 | NavForesee: A Unified Vision-Language World Model for Hierarchical Planning and Dual-Horizon Navigation Prediction | 直接命中 | R2R-CE / RxR-CE | unified world model, hierarchical planning, dual-horizon prediction | planner + world model | 高层规划与局部预测统一参考 | https://arxiv.org/abs/2512.01550 | 2025 年很值得跟踪的统一 world-model 路线 |
 | 已核实 | 2025 | Ground Slow, Move Fast: A Dual-System Foundation Model for Generalizable Vision-and-Language Navigation | 直接命中 | VLN benchmarks（含连续场景） | dual-system, waypoint reasoning, diffusion control | global planner + local diffusion policy | DualVLN，关键工作，不能遗漏 | https://arxiv.org/abs/2512.08186 | 这是你点名漏掉的关键工作，已补入 |
+| 已核实 | 2025 | CLASH: Collaborative Large-Small Hierarchical Framework for Continuous Vision-and-Language Navigation | 直接命中 | VLN-CE leaderboard | large-small collaboration, hierarchy, uncertainty fusion | large-small hierarchical collaboration | 2025 SOTA / leaderboard 参考 | https://arxiv.org/abs/2512.10360 | 明确宣称 VLN-CE leaderboard 1st，需要重点跟踪 |
 | 已核实 | 2026 | EmergeNav: Structured Embodied Inference for Zero-Shot Vision-and-Language Navigation in Continuous Environments | 直接命中 | VLN-CE | zero-shot, structure, dual-memory, progress | structured embodied inference | 2026 新工作，优先跟踪 | https://arxiv.org/abs/2603.16947 | 非常贴近“高层结构化执行”问题 |
 | 已核实 | 2026 | Dynamic Topology Awareness: Breaking the Granularity Rigidity in Vision-Language Navigation | 直接命中 | R2R-CE / RxR-CE | topo density, dynamic granularity, graph adaptation | dynamic topo planning | topo granularity / graph management 参考 | https://arxiv.org/abs/2601.21751 | 直接针对 topo granularity rigidity，与你关心的问题高度一致 |
 | 已核实 | 2026 | Let's Reward Step-by-Step: Step-Aware Contrastive Alignment for Vision-Language Navigation in Continuous Environments | 直接命中 | VLN-CE benchmarks | step reward, dense alignment, long-horizon credit assignment | step-aware alignment / reward shaping | 训练范式 / progress credit 参考 | https://arxiv.org/abs/2603.09740 | 对“长时 credit assignment”非常值得关注 |
@@ -103,6 +107,7 @@
 14. StreamVLN
 15. DAgger Diffusion Navigation
 16. Open-Nav
+17. CLASH
 
 ### C4. benchmark / dataset / setting 扩展
 
@@ -120,6 +125,9 @@
 3. Cog-GA
 4. Efficient-VLN
 5. ETP-R1
+6. Sim-2-Sim Transfer
+7. RxR-Habitat Competition Winner
+8. Graph based Environment Representation
 
 ### C3. 扩展设定
 
