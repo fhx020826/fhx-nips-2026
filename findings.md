@@ -67,3 +67,7 @@ bash -ic 'proxy >/dev/null; <command>'
   - `DAgger Diffusion Navigation`
   - `RoomTour3D`
   - `Towards Learning a Generalist Model for Embodied Navigation`
+- 目前飞书全量列表已经超过 100 篇，达到阶段性目标。
+- 当前下一阶段重点应转向：
+  - 日期与去重校验
+  - 内部高质量 shortlist 的硬指标打分

@@ -82,3 +82,28 @@
 75. 2019-04 | Habitat: A Platform for Embodied AI Research | https://arxiv.org/abs/1904.01201
 76. 2018-11 | Room-to-Room: Vision-and-Language Navigation with Matterport3D | https://arxiv.org/abs/1711.07280
 77. 2018-06 | Speaker-Follower Models for Vision-and-Language Navigation | https://arxiv.org/abs/1806.02724
+78. 2025-03 | PanoGen++: Domain-Adapted Text-Guided Panoramic Environment Generation for Vision-and-Language Navigation | https://arxiv.org/abs/2503.09938
+79. 2022-05 | Aerial Vision-and-Dialog Navigation | https://arxiv.org/abs/2205.12219
+80. 2022-04 | Reinforced Structured State-Evolution for Vision-Language Navigation | https://arxiv.org/abs/2204.09280
+81. 2021-06 | Core Challenges in Embodied Vision-Language Planning | https://arxiv.org/abs/2106.13948
+82. 2021-03 | Scene-Intuitive Agent for Remote Embodied Visual Grounding | https://arxiv.org/abs/2103.12944
+83. 2021-03 | SOON: Scenario Oriented Object Navigation with Graph-based Exploration | https://arxiv.org/abs/2103.17138
+84. 2020-07 | Evolving Graphical Planner: Contextual Global Planning for Vision-and-Language Navigation | https://arxiv.org/abs/2007.05655
+85. 2019-07 | Vision-and-Dialog Navigation | https://arxiv.org/abs/1907.04957
+86. 2019-05 | Stay on the Path: Instruction Fidelity in Vision-and-Language Navigation | https://arxiv.org/abs/1905.12255
+87. 2019-04 | REVERIE: Remote Embodied Visual Referring Expression in Real Indoor Environments | https://arxiv.org/abs/1904.10151
+88. 2019-04 | Learning to Navigate Unseen Environments: Back Translation with Environmental Dropout | https://arxiv.org/abs/1904.04195
+89. 2019-03 | Tactical Rewind: Self-Correction via Backtracking in Vision-and-Language Navigation | https://arxiv.org/abs/1903.02547
+90. 2019-03 | Learning To Follow Directions in Street View | https://arxiv.org/abs/1903.00401
+91. 2019-01 | Self-Monitoring Navigation Agent via Auxiliary Progress Estimation | https://arxiv.org/abs/1901.03035
+92. 2018-11 | Touchdown: Natural Language Navigation and Spatial Reasoning in Visual Street Environments | https://arxiv.org/abs/1811.12354
+93. 2018-11 | Reinforced Cross-Modal Matching and Self-Supervised Imitation Learning for Vision-Language Navigation | https://arxiv.org/abs/1811.10092
+94. 2024-07 | Vision-and-Language Navigation Today and Tomorrow: A Survey in the Era of Foundation Models | https://arxiv.org/abs/2407.07035
+95. 2024-02 | Vision-Language Navigation with Embodied Intelligence: A Survey | https://arxiv.org/abs/2402.14304
+96. 2023-08 | Target-Grounded Graph-Aware Transformer for Aerial Vision-and-Dialog Navigation | https://arxiv.org/abs/2308.11561
+97. 2022-03 | Vision-and-Language Navigation: A Survey of Tasks, Methods, and Future Directions | https://arxiv.org/abs/2203.12667
+98. 2020-10 | The RobotSlang Benchmark: Dialog-guided Robot Localization and Navigation | https://arxiv.org/abs/2010.12639
+99. 2019-07 | Chasing Ghosts: Instruction Following as Bayesian State Tracking | https://arxiv.org/abs/1907.02022
+100. 2024-03 | Volumetric Environment Representation for Vision-Language Navigation | https://arxiv.org/abs/2403.14158
+101. 2020-10 | Language and Visual Entity Relationship Graph for Agent Navigation | https://arxiv.org/abs/2010.09304
+102. 2019-05 | Stay on the Path: Instruction Fidelity in Vision-and-Language Navigation | https://arxiv.org/abs/1905.12255

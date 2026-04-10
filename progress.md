@@ -23,3 +23,4 @@
 - 新增 Sim-2-Sim / RxR-Habitat 竞赛方案 / graph env representation / CLASH，当前飞书列表扩至 40 条
 - 新增 R2R / RxR / Habitat / Habitat 2.0 血缘线论文，当前飞书列表扩至 46 条
 - 新增大批 VLN 方法演进链相关论文，当前飞书列表扩至 77 条
+- 继续补 benchmark / survey / graph / volumetric 等相关工作，当前飞书列表扩至 102 条
