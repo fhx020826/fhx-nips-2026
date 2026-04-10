@@ -21,3 +21,4 @@
 - 补回 DualVLN 与 benchmark/setting 扩展条目，当前飞书列表扩至 31 条
 - 继续补回 Open-Nav / StreamVLN / DifNav / RoomTour3D / NaviLLM，当前飞书列表扩至 34 条
 - 新增 Sim-2-Sim / RxR-Habitat 竞赛方案 / graph env representation / CLASH，当前飞书列表扩至 40 条
+- 新增 R2R / RxR / Habitat / Habitat 2.0 血缘线论文，当前飞书列表扩至 46 条

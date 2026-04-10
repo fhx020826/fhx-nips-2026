@@ -87,6 +87,10 @@
 | 已核实 | 2024 | RoomTour3D: Geometry-Aware Video-Instruction Tuning for Embodied Navigation | 强相关（dataset） | RoomTour3D | dataset, video instruction, geometry-aware tuning | dataset / pretraining corpus | 数据与 video-instruction tuning 参考 | https://arxiv.org/abs/2412.08591 | 数据和预训练资源层面的重要补充 |
 | 已核实 | 2023 | Towards Learning a Generalist Model for Embodied Navigation | 强相关（foundation） | multi-task embodied navigation | generalist, schema instruction, unified interface | generalist embodied navigation | foundation navigation 参考 | https://arxiv.org/abs/2312.02010 | foundation 路线不能遗漏 |
 | 已核实 | 2025 | IndoorUAV: Benchmarking Vision-Language UAV Navigation in Continuous Indoor Environments | 强相关（benchmark） | IndoorUAV-VLN / IndoorUAV-VLA | benchmark, indoor UAV, continuous indoor VLN | benchmark + method | 连续室内 VLN benchmark 扩展 | https://arxiv.org/abs/2512.19024 | 虽是 UAV，但属于同问题空间的连续 VLN 扩展 |
+| 已核实 | 2020 | RxR: Multilingual Guided Vision-and-Language Navigation via Benchmark Translation | 强相关（benchmark lineage） | RxR | multilingual instruction benchmark | dataset / benchmark | RxR-CE 的语言数据来源 | https://arxiv.org/abs/2010.07954 | 连续 RxR-CE 的上游 benchmark，必须保留 |
+| 已核实 | 2018 | Room-to-Room: Vision-and-Language Navigation with Matterport3D | 强相关（benchmark lineage） | R2R | benchmark, instruction following | dataset / benchmark | R2R-CE 的上游 benchmark | https://arxiv.org/abs/1711.07280 | 整个赛道的起点之一 |
+| 已核实 | 2019 | Habitat: A Platform for Embodied AI Research | 强相关（platform） | Habitat | simulator, embodied platform | simulator / platform | continuous VLN-CE 所依赖的平台基础 | https://arxiv.org/abs/1904.01201 | continuous 环境实验平台基础工作 |
+| 已核实 | 2021 | Habitat 2.0: Training Home Assistants to Rearrange their Habitat | 强相关（platform） | Habitat 2.0 | simulator, embodied benchmark | simulator / platform | Habitat 平台演进背景 | https://arxiv.org/abs/2106.14405 | 虽非 VLN 专属，但平台演进相关 |
 
 ---
 
@@ -120,6 +124,8 @@
 4. NavTrust
 5. SeqWalker / SH IR2R-CE
 6. RoomTour3D
+7. RxR / R2R
+8. Habitat / Habitat 2.0
 
 ### C2. 第二梯队
 

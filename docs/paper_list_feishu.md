@@ -46,4 +46,8 @@
 39. 2022-06 | 1st Place Solutions for RxR-Habitat Vision-and-Language Navigation Competition (CVPR 2022) | https://arxiv.org/abs/2206.11610
 40. 2022-04 | Sim-2-Sim Transfer for Vision-and-Language Navigation in Continuous Environments | https://arxiv.org/abs/2204.09667
 41. 2022-03 | Cross-modal Map Learning for Vision and Language Navigation | https://arxiv.org/abs/2203.05137
-42. 2020-04 | Beyond the Nav-Graph: Vision-and-Language Navigation in Continuous Environments | https://arxiv.org/abs/2004.02857
+42. 2021-06 | Habitat 2.0: Training Home Assistants to Rearrange their Habitat | https://arxiv.org/abs/2106.14405
+43. 2020-10 | RxR: Multilingual Guided Vision-and-Language Navigation via Benchmark Translation | https://arxiv.org/abs/2010.07954
+44. 2020-04 | Beyond the Nav-Graph: Vision-and-Language Navigation in Continuous Environments | https://arxiv.org/abs/2004.02857
+45. 2019-04 | Habitat: A Platform for Embodied AI Research | https://arxiv.org/abs/1904.01201
+46. 2018-11 | Room-to-Room: Vision-and-Language Navigation with Matterport3D | https://arxiv.org/abs/1711.07280
