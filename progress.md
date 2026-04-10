@@ -18,3 +18,4 @@
 - 按用户要求移除“继承上下文”式写法，改为纯重新检索版论文总表
 - 新增 2026 方向：dynamic topology 与 step-aware reward shaping
 - 新增 `docs/paper_list_feishu.md` 作为飞书可直接粘贴列表
+- 补回 DualVLN 与 benchmark/setting 扩展条目，当前飞书列表扩至 31 条

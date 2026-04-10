@@ -60,3 +60,4 @@ bash -ic 'proxy >/dev/null; <command>'
 - 当前新增趋势开始更清楚地分成两类：
   - topo / graph granularity / dynamic topology
   - step-aware reward / dense alignment / long-horizon credit assignment
+- 用户指出的 `DualVLN` 漏项已补回，说明后续必须继续以 Awesome-VLN 为主线系统补表，不能只靠关键词零散搜索。

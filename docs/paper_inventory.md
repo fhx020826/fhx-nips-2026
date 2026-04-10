@@ -55,6 +55,7 @@
 | 已核实 | 2025 | Efficient-VLN: A Training-Efficient Vision-Language Navigation Model | 直接命中 | R2R-CE / RxR-CE | memory efficiency, training efficiency | efficient VLN | training recipe / efficient memory 参考 | https://papers.cool/arxiv/2512.10310 | 可能对“最小代价做强 baseline”有用 |
 | 已核实 | 2025 | ETP-R1: Evolving Topological Planning with Reinforcement Fine-tuning for Vision-Language Navigation in Continuous Environments | 直接命中 | VLN-CE | topo planning, reinforcement fine-tuning | topo planning + RFT | topo 路线后续工作 | https://huggingface.co/papers/2512.20940 | 是 ETP 路线的后续演进，值得持续关注 |
 | 已核实 | 2025 | NavForesee: A Unified Vision-Language World Model for Hierarchical Planning and Dual-Horizon Navigation Prediction | 直接命中 | R2R-CE / RxR-CE | unified world model, hierarchical planning, dual-horizon prediction | planner + world model | 高层规划与局部预测统一参考 | https://arxiv.org/abs/2512.01550 | 2025 年很值得跟踪的统一 world-model 路线 |
+| 已核实 | 2025 | Ground Slow, Move Fast: A Dual-System Foundation Model for Generalizable Vision-and-Language Navigation | 直接命中 | VLN benchmarks（含连续场景） | dual-system, waypoint reasoning, diffusion control | global planner + local diffusion policy | DualVLN，关键工作，不能遗漏 | https://arxiv.org/abs/2512.08186 | 这是你点名漏掉的关键工作，已补入 |
 | 已核实 | 2026 | EmergeNav: Structured Embodied Inference for Zero-Shot Vision-and-Language Navigation in Continuous Environments | 直接命中 | VLN-CE | zero-shot, structure, dual-memory, progress | structured embodied inference | 2026 新工作，优先跟踪 | https://arxiv.org/abs/2603.16947 | 非常贴近“高层结构化执行”问题 |
 | 已核实 | 2026 | Dynamic Topology Awareness: Breaking the Granularity Rigidity in Vision-Language Navigation | 直接命中 | R2R-CE / RxR-CE | topo density, dynamic granularity, graph adaptation | dynamic topo planning | topo granularity / graph management 参考 | https://arxiv.org/abs/2601.21751 | 直接针对 topo granularity rigidity，与你关心的问题高度一致 |
 | 已核实 | 2026 | Let's Reward Step-by-Step: Step-Aware Contrastive Alignment for Vision-Language Navigation in Continuous Environments | 直接命中 | VLN-CE benchmarks | step reward, dense alignment, long-horizon credit assignment | step-aware alignment / reward shaping | 训练范式 / progress credit 参考 | https://arxiv.org/abs/2603.09740 | 对“长时 credit assignment”非常值得关注 |
@@ -71,6 +72,9 @@
 | 已核实 | 2025 | GC-VLN: Instruction as Graph Constraints for Training-free Vision-and-Language Navigation | 强相关 | continuous environments | graph constraints, training-free, structure | graph constraint optimization | training-free / graph reasoning 参考 | https://openreview.net/forum?id=mjYKNIRqpy | 对“结构化约束”与“无需再训练”有启发 |
 | 已核实 | 2025 | HA-VLN: A Benchmark for Human-Aware Navigation in Discrete–Continuous Environments with Dynamic Multi-Human Interactions, Real-World Validation, and an Open Leaderboard | 强相关（benchmark） | HA-VLN / dynamic humans | benchmark, human-aware navigation | benchmark / dataset | 动态人类交互 benchmark 参考 | https://arxiv.org/abs/2503.14229 | benchmark 工作不能遗漏 |
 | 已核实 | 2026 | SeqWalker: Sequential-Horizon Vision-and-Language Navigation with Hierarchical Planning | 强相关（扩展设定） | SH IR2R-CE | long-horizon, hierarchical planning, sequential instructions | hierarchical planning | 长序列指令连续导航参考 | https://arxiv.org/abs/2601.04699 | 长程 instruction following 的新 benchmark/方法结合体 |
+| 已核实 | 2025 | VPN: Visual Prompt Navigation | 强相关（benchmark） | R2R-VP / R2R-CE-VP | visual prompt, benchmark extension | new task + baseline | benchmark/setting 扩展参考 | https://arxiv.org/abs/2508.01766 | 虽不再是语言指令，但连续导航 benchmark 扩展应保留 |
+| 已核实 | 2024 | Human-Aware Vision-and-Language Navigation: Bridging Simulation to Reality with Dynamic Human Interactions | 强相关（benchmark） | HA-R2R / HA3D | dynamic humans, sim2real, benchmark | new simulator + benchmark + baselines | 动态人类场景 benchmark 起点 | https://arxiv.org/abs/2406.19236 | 是 HA-VLN 的前置工作，不能漏 |
+| 已核实 | 2026 | NavTrust: Benchmarking Trustworthiness for Embodied Navigation | 强相关（benchmark） | NavTrust | robustness, corruptions, trustworthiness | benchmark | continuous VLN robustness benchmark 参考 | https://arxiv.org/abs/2603.19229 | 虽非纯 VLN-CE 专用，但对鲁棒性评测很重要 |
 
 ---
 
@@ -88,8 +92,17 @@
 8. ETPNav
 9. NaVid
 10. NavForesee
-11. SpatialNav
-12. LaViRA
+11. DualVLN
+12. SpatialNav
+13. LaViRA
+
+### C4. benchmark / dataset / setting 扩展
+
+1. HA-VLN
+2. Human-Aware Vision-and-Language Navigation
+3. VPN / R2R-CE-VP
+4. NavTrust
+5. SeqWalker / SH IR2R-CE
 
 ### C2. 第二梯队
 
@@ -112,4 +125,4 @@
 
 1. 还没有完成 `2023–2026` 全量扫表，特别是 2025–2026 可能还有遗漏。
 2. 还没有把直接命中论文逐篇展开成固定粗读模板。
-3. `monoVLN / MonoDream / Efficient-VLN / ETP-R1 / NavForesee / SpatialNav / LaViRA` 当前仍需进一步补齐正式发表信息、项目页、代码页。
+3. `monoVLN / MonoDream / Efficient-VLN / ETP-R1 / NavForesee / DualVLN / SpatialNav / LaViRA` 当前仍需进一步补齐正式发表信息、项目页、代码页。
