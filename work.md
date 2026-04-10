@@ -33,17 +33,30 @@
 9. 新建论文总表：
    - `docs/paper_inventory.md`
 10. 已将第一批新增候选落表，包含：
+   - Beyond the Nav-Graph
+   - Cross-modal Map Learning for Vision and Language Navigation
+   - Iterative Vision-and-Language Navigation in Continuous Environments
+   - DREAMWALKER
+   - GridMM
+   - Safe-VLN
+   - Cog-GA
    - Constraint-Aware Zero-Shot Vision-Language Navigation in Continuous Environments
+   - NavMorph
    - monoVLN
    - MonoDream
-   - ETP-R1
    - Efficient-VLN
-   - Mind the Error!
+   - ETP-R1
+   - EmergeNav
+   - Dynamic Topology Awareness
+   - Step-Aware Contrastive Alignment
+   - GC-VLN
+11. 已按你的新要求改成“全部重新检索”模式，不再在论文总表里使用“继承上下文”来源。
 
 ### 当前阻塞
 
 1. 论文总表目前仍以“总览池”为主，尚未展开为逐篇固定模板粗读。
 2. 2025–2026 候选池还未系统扫全。
+3. 部分 2025 论文当前只完成了 paper 级别链接核实，项目页/代码页/正式录用信息还未补齐。
 
 ### 当前判断
 

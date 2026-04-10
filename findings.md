@@ -39,13 +39,24 @@ bash -ic 'proxy >/dev/null; <command>'
 ### 论文调研
 
 - 已创建论文总表：`docs/paper_inventory.md`。
-- 当前总表中包含两类条目：
-  - 已继承上下文的核心论文
-  - 本轮联网确认存在并加入候选池的新增论文
-- 本轮新增并已确认存在的代表论文包括：
+- 根据用户最新要求，论文总表已切换为“全部重新检索”模式。
+- 当前已重新检索并登记的 direct-hit 论文包括：
+  - `Beyond the Nav-Graph`
+  - `Cross-modal Map Learning for Vision and Language Navigation`
+  - `Iterative Vision-and-Language Navigation in Continuous Environments`
+  - `DREAMWALKER`
+  - `GridMM`
+  - `Safe-VLN`
+  - `Cog-GA`
   - `Constraint-Aware Zero-Shot Vision-Language Navigation in Continuous Environments`
-  - `monoVLN: Bridging the Observation Gap between Monocular and Panoramic Vision and Language Navigation`
-  - `MonoDream: Monocular Vision-Language Navigation with Panoramic Dreaming`
-  - `ETP-R1: Evolving Topological Planning with Reinforcement Fine-tuning for Vision-Language Navigation in Continuous Environments`
-  - `Efficient-VLN: A Training-Efficient Vision-Language Navigation Model`
-  - `Mind the Error! Detection and Localization of Instruction Errors in Vision-and-Language Navigation`
+  - `NavMorph`
+  - `monoVLN`
+  - `MonoDream`
+  - `Efficient-VLN`
+  - `ETP-R1`
+  - `EmergeNav`
+  - `Dynamic Topology Awareness`
+  - `Let's Reward Step-by-Step`
+- 当前新增趋势开始更清楚地分成两类：
+  - topo / graph granularity / dynamic topology
+  - step-aware reward / dense alignment / long-horizon credit assignment
