@@ -47,11 +47,14 @@
 | 已核实 | 2024 | ETPNav: Evolving Topological Planning for Vision-Language Navigation in Continuous Environments | 直接命中 | R2R-CE / RxR-CE | topo planning, ghost node, tryout, recovery | topo planning | topo baseline / codebase 参考 | https://arxiv.org/abs/2304.03047 | topo 路线代表作，不能遗漏 |
 | 已核实 | 2024 | NaVid: Video-based VLM Plans the Next Step for Vision-and-Language Navigation | 直接命中 | VLN-CE | video history, next-step planning | video-based VLM planner | history backbone 参考 | https://arxiv.org/abs/2402.15852 | video history 路线代表作 |
 | 已核实 | 2024 | Constraint-Aware Zero-Shot Vision-Language Navigation in Continuous Environments | 直接命中 | R2R-CE / RxR-CE | zero-shot, sub-instruction, constraints, progress | constraint-aware planner | zero-shot / progress / subgoal 参考 | https://arxiv.org/abs/2412.10137 | 很值得重点深读，和 progress / bridge 直接相关 |
+| 已核实 | 2024 | Open-Nav: Exploring Zero-Shot Vision-and-Language Navigation in Continuous Environment with Open-Source LLMs | 直接命中 | VLN-CE / real-world | zero-shot, CoT, progress estimation | open-source LLM reasoning | zero-shot reasoning scaffold 参考 | https://arxiv.org/abs/2409.18794 | open-source LLM zero-shot continuous VLN 的代表工作 |
 | 已核实 | 2025 | Ground-level Viewpoint Vision-and-Language Navigation in Continuous Environments | 直接命中 | continuous VLN benchmarks | viewpoint gap, scale, embodied height | viewpoint adaptation | 低视角/真机视角缺口参考 | https://arxiv.org/abs/2502.19024 | 对真实机器人视角偏差问题重要 |
 | 已核实 | 2025 | LaViRA: Language-Vision-Robot Actions Translation for Zero-Shot Vision Language Navigation in Continuous Environments | 直接命中 | VLN-CE | zero-shot, hierarchical control, robot action translation | hierarchical planner-controller | 真机部署 / 零样本 bridge 参考 | https://arxiv.org/abs/2510.19655 | 典型“大模型高层 + 小模型感知/控制”结构 |
 | 已核实 | 2025 | NavMorph: A Self-Evolving World Model for Vision-and-Language Navigation in Continuous Environments | 直接命中 | VLN-CE benchmarks | world model, evolution memory | self-evolving world model | world-model 路线新作 | https://arxiv.org/abs/2506.23468 | 2025 新增 world-model 方向，需重点跟踪 |
+| 已核实 | 2025 | StreamVLN: Streaming Vision-and-Language Navigation via SlowFast Context Modeling | 直接命中 | VLN-CE benchmarks | streaming, slow-fast memory, low latency | streaming VLN | history compression / streaming inference 参考 | https://arxiv.org/abs/2507.05240 | history 压缩与在线推理的重要新作 |
 | 已核实 | 2025 | monoVLN: Bridging the Observation Gap between Monocular and Panoramic Vision and Language Navigation | 直接命中 | R2R-CE / RxR-CE | monocular, observation gap, uncertainty | monocular VLN | 单目设定与观测缺口参考 | https://papers.cool/venue/Lu_monoVLN_Bridging_the_Observation_Gap_between_Monocular_and_Panoramic_Vision%40ICCV2025%40CVF | 虽是单目设定，但对观测缺口问题有价值 |
 | 已核实 | 2025 | MonoDream: Monocular Vision-Language Navigation with Panoramic Dreaming | 直接命中 | R2R-CE / RxR-CE | monocular, panoramic dreaming | monocular + latent panoramic completion | 观测补全 / latent bridge 参考 | https://www.sciencestack.ai/paper/2508.02549 | 单目 VLN-CE 新方向，需进一步核实正式页 |
+| 已核实 | 2025 | DAgger Diffusion Navigation: DAgger Boosted Diffusion Policy for Vision-Language Navigation | 直接命中 | VLN-CE benchmarks | diffusion, DAgger, action expert | diffusion policy | diffusion baseline / codebase 参考 | https://arxiv.org/abs/2508.09444 | diffusion 路线的关键 direct-hit 论文 |
 | 已核实 | 2025 | Efficient-VLN: A Training-Efficient Vision-Language Navigation Model | 直接命中 | R2R-CE / RxR-CE | memory efficiency, training efficiency | efficient VLN | training recipe / efficient memory 参考 | https://papers.cool/arxiv/2512.10310 | 可能对“最小代价做强 baseline”有用 |
 | 已核实 | 2025 | ETP-R1: Evolving Topological Planning with Reinforcement Fine-tuning for Vision-Language Navigation in Continuous Environments | 直接命中 | VLN-CE | topo planning, reinforcement fine-tuning | topo planning + RFT | topo 路线后续工作 | https://huggingface.co/papers/2512.20940 | 是 ETP 路线的后续演进，值得持续关注 |
 | 已核实 | 2025 | NavForesee: A Unified Vision-Language World Model for Hierarchical Planning and Dual-Horizon Navigation Prediction | 直接命中 | R2R-CE / RxR-CE | unified world model, hierarchical planning, dual-horizon prediction | planner + world model | 高层规划与局部预测统一参考 | https://arxiv.org/abs/2512.01550 | 2025 年很值得跟踪的统一 world-model 路线 |
@@ -75,6 +78,8 @@
 | 已核实 | 2025 | VPN: Visual Prompt Navigation | 强相关（benchmark） | R2R-VP / R2R-CE-VP | visual prompt, benchmark extension | new task + baseline | benchmark/setting 扩展参考 | https://arxiv.org/abs/2508.01766 | 虽不再是语言指令，但连续导航 benchmark 扩展应保留 |
 | 已核实 | 2024 | Human-Aware Vision-and-Language Navigation: Bridging Simulation to Reality with Dynamic Human Interactions | 强相关（benchmark） | HA-R2R / HA3D | dynamic humans, sim2real, benchmark | new simulator + benchmark + baselines | 动态人类场景 benchmark 起点 | https://arxiv.org/abs/2406.19236 | 是 HA-VLN 的前置工作，不能漏 |
 | 已核实 | 2026 | NavTrust: Benchmarking Trustworthiness for Embodied Navigation | 强相关（benchmark） | NavTrust | robustness, corruptions, trustworthiness | benchmark | continuous VLN robustness benchmark 参考 | https://arxiv.org/abs/2603.19229 | 虽非纯 VLN-CE 专用，但对鲁棒性评测很重要 |
+| 已核实 | 2024 | RoomTour3D: Geometry-Aware Video-Instruction Tuning for Embodied Navigation | 强相关（dataset） | RoomTour3D | dataset, video instruction, geometry-aware tuning | dataset / pretraining corpus | 数据与 video-instruction tuning 参考 | https://arxiv.org/abs/2412.08591 | 数据和预训练资源层面的重要补充 |
+| 已核实 | 2023 | Towards Learning a Generalist Model for Embodied Navigation | 强相关（foundation） | multi-task embodied navigation | generalist, schema instruction, unified interface | generalist embodied navigation | foundation navigation 参考 | https://arxiv.org/abs/2312.02010 | foundation 路线不能遗漏 |
 
 ---
 
@@ -95,6 +100,9 @@
 11. DualVLN
 12. SpatialNav
 13. LaViRA
+14. StreamVLN
+15. DAgger Diffusion Navigation
+16. Open-Nav
 
 ### C4. benchmark / dataset / setting 扩展
 
@@ -103,6 +111,7 @@
 3. VPN / R2R-CE-VP
 4. NavTrust
 5. SeqWalker / SH IR2R-CE
+6. RoomTour3D
 
 ### C2. 第二梯队
 
@@ -125,4 +134,4 @@
 
 1. 还没有完成 `2023–2026` 全量扫表，特别是 2025–2026 可能还有遗漏。
 2. 还没有把直接命中论文逐篇展开成固定粗读模板。
-3. `monoVLN / MonoDream / Efficient-VLN / ETP-R1 / NavForesee / DualVLN / SpatialNav / LaViRA` 当前仍需进一步补齐正式发表信息、项目页、代码页。
+3. `monoVLN / MonoDream / Efficient-VLN / ETP-R1 / NavForesee / DualVLN / SpatialNav / LaViRA / StreamVLN / Open-Nav / DAgger Diffusion Navigation / RoomTour3D` 当前仍需进一步补齐正式发表信息、项目页、代码页。

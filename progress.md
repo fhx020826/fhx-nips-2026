@@ -19,3 +19,4 @@
 - 新增 2026 方向：dynamic topology 与 step-aware reward shaping
 - 新增 `docs/paper_list_feishu.md` 作为飞书可直接粘贴列表
 - 补回 DualVLN 与 benchmark/setting 扩展条目，当前飞书列表扩至 31 条
+- 继续补回 Open-Nav / StreamVLN / DifNav / RoomTour3D / NaviLLM，当前飞书列表扩至 34 条

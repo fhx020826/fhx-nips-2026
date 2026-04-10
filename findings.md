@@ -61,3 +61,9 @@ bash -ic 'proxy >/dev/null; <command>'
   - topo / graph granularity / dynamic topology
   - step-aware reward / dense alignment / long-horizon credit assignment
 - 用户指出的 `DualVLN` 漏项已补回，说明后续必须继续以 Awesome-VLN 为主线系统补表，不能只靠关键词零散搜索。
+- 本轮又补回一批此前遗漏但重要的条目：
+  - `Open-Nav`
+  - `StreamVLN`
+  - `DAgger Diffusion Navigation`
+  - `RoomTour3D`
+  - `Towards Learning a Generalist Model for Embodied Navigation`
