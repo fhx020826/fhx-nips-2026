@@ -30,19 +30,28 @@
    - 本机 Windows
    - 远端 Linux HPC 跳板机/集群
    - 重负载任务后续统一走 SLURM/计算节点
+9. 新建论文总表：
+   - `docs/paper_inventory.md`
+10. 已将第一批新增候选落表，包含：
+   - Constraint-Aware Zero-Shot Vision-Language Navigation in Continuous Environments
+   - monoVLN
+   - MonoDream
+   - ETP-R1
+   - Efficient-VLN
+   - Mind the Error!
 
 ### 当前阻塞
 
-1. GitHub 仓库远程探针可连通，但仓库当前没有返回 refs，推测为空仓库或默认分支尚未产生首个提交。
-2. 仍需验证通过代理执行 `git push` 是否稳定。
+1. 论文总表目前仍以“总览池”为主，尚未展开为逐篇固定模板粗读。
+2. 2025–2026 候选池还未系统扫全。
 
 ### 当前判断
 
 1. 现在优先级最高的是把“代理 + conda + 仓库首个提交”彻底打通。
-2. 基础设施已基本成型，可以在首次推送成功后进入论文总表搭建。
+2. 基础设施已打通，当前应切换到“论文总表扩充 + 优先级排序 + 粗读模板化”。
 
 ### 下一步
 
-1. 完成项目治理文件与代理脚本的首次 Git 提交。
-2. 通过代理测试远程 `push`。
-3. 开始 continuous VLN / VLN-CE 论文总表搭建。
+1. 把 `docs/paper_inventory.md` 扩展到更完整的 2023–2026 候选池。
+2. 对新增高优先级论文补齐固定粗读模板。
+3. 按“直接命中 / 强相关 / 可迁移”三层进一步细化。

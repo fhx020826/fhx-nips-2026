@@ -35,3 +35,17 @@ bash -ic 'proxy >/dev/null; <command>'
 - 当前开发上下文是“Windows 本机 + Linux HPC 跳板机/集群远程开发”。
 - 跳板机适合登录、管理、提交作业，不适合跑重负载程序。
 - 已在项目内整理摘要手册：`docs/hpc_handbook.md`。
+
+### 论文调研
+
+- 已创建论文总表：`docs/paper_inventory.md`。
+- 当前总表中包含两类条目：
+  - 已继承上下文的核心论文
+  - 本轮联网确认存在并加入候选池的新增论文
+- 本轮新增并已确认存在的代表论文包括：
+  - `Constraint-Aware Zero-Shot Vision-Language Navigation in Continuous Environments`
+  - `monoVLN: Bridging the Observation Gap between Monocular and Panoramic Vision and Language Navigation`
+  - `MonoDream: Monocular Vision-Language Navigation with Panoramic Dreaming`
+  - `ETP-R1: Evolving Topological Planning with Reinforcement Fine-tuning for Vision-Language Navigation in Continuous Environments`
+  - `Efficient-VLN: A Training-Efficient Vision-Language Navigation Model`
+  - `Mind the Error! Detection and Localization of Instruction Errors in Vision-and-Language Navigation`

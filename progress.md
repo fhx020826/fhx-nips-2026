@@ -13,3 +13,5 @@
 - 新增 `scripts/proxy_exec.sh` 统一代理执行入口
 - 新增 `docs/hpc_handbook.md`，整理 HPC 关键命令、注意事项和 FAQ
 - 更新 `user.md`，明确当前是 Windows 到 Linux HPC 的远程开发模式
+- 新建 `docs/paper_inventory.md`
+- 第一批新增 VLN-CE / monocular VLN / topo-RFT / efficient VLN 论文已登记入总表
