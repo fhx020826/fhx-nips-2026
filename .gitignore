@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.venv/
+env/
+
+# Local data and heavy artifacts
+data/
+artifacts/
+tmp/
+outputs/
+results/
+runs/
+logs/
+checkpoints/
+weights/
+wandb/
+tensorboard/
+
+# Research cache
+papers/
+literature/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Keep directory structure
+!data/.gitkeep
+!artifacts/.gitkeep
+!tmp/.gitkeep
