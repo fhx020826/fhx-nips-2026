@@ -75,6 +75,11 @@
    - topo / graph / memory / lookahead
    - zero-shot / open-source LLM / large-small hierarchy
    - diffusion / streaming / benchmark 扩展
+17. 按你的最新要求，交付结构正式分成两层：
+   - 对外：最全论文列表（最终目标 >100 篇）
+   - 对内：高质量 shortlist（目标约 25 篇）
+18. 新增内部质量短名单文件：
+   - `docs/paper_quality_shortlist.md`
 
 ### 当前阻塞
 
