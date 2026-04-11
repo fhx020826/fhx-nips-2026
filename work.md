@@ -106,6 +106,15 @@
 
 ### 本轮新增
 
+1. 新建项目总交接文档：
+   - `docs/project_handoff.md`
+2. 该文档用于新对话继承，已汇总：
+   - 项目目标与当前主线
+   - 核心文档与脚本入口
+   - 论文列表与粗读资产状态
+   - 当前真实进度
+   - 用户最新偏好
+   - 下一步推荐执行顺序
 1. 新建完整列表顺序粗读队列脚本：
    - `scripts/prepare_roughread_queue.py`
 2. 脚本支持从 `docs/paper_list_feishu_strict.md` 抽取顺序条目，并按 index / batch 输出 `json/jsonl/md scaffold`，用于后续批量粗读自动化。
