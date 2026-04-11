@@ -85,28 +85,48 @@
 19. 新增严格终版飞书列表：
    - `docs/paper_list_feishu_strict.md`
 20. 内部 shortlist 已改为正式排序版，包含分数、用途与优先级建议。
+21. 本轮对 strict 列表做了边界清洗：
+   - 删除纯离散 VLN 上游方法
+   - 删除纯 survey
+   - 删除泛 embodied navigation 但不以 continuous VLN 为主任务的条目
+22. 重新定义 strict 列表保留范围：
+   - direct continuous VLN 方法
+   - continuous VLN 的 zero-shot / memory / topology / streaming / robustness 工作
+   - continuous VLN 的 benchmark / challenge / dataset 扩展
+23. 新增日期核验脚本：
+   - `scripts/collect_arxiv_dates.py`
+   - `scripts/fetch_arxiv_abs_dates.py`
+24. 已逐篇核对 strict 核心集的 `arXiv v1` 首发日期，并完成逐日倒序重排。
+25. strict 飞书终版现收敛为 39 篇核心论文：
+   - 从 2026-03-16 的 `EmergeNav / HiMemVLN`
+   - 到 2020-04-06 的 `Beyond the Nav-Graph`
+26. `docs/paper_quality_shortlist.md` 已重写为飞书可直接粘贴的 Top 25 高质量优先级表。
 
 ### 当前阻塞
 
 1. 论文总表目前仍以“总览池”为主，尚未展开为逐篇固定模板粗读。
 2. 2025–2026 候选池还未系统扫全。
 3. 部分 2025 论文当前只完成了 paper 级别链接核实，项目页/代码页/正式录用信息还未补齐。
-4. 本轮最新本地提交还未成功 push，原因是代理链路发生 `gnutls_handshake` / 连接类瞬时错误。
-5. 当前飞书列表已扩到 102 条，已达到“>100”目标。
-6. 接下来重点不再是数量，而是：
+4. broad 总表仍有继续补齐和细分标签的空间，但 strict 核心集已经基本稳定。
+5. 当前飞书 broad 列表已扩到 100+，已达到“全景图谱”阶段目标。
+6. 接下来重点不再是继续堆数量，而是：
    - 日期精排
    - 去重复核
    - 内部高质量 25 篇打分校准
-7. 当前 broad 列表和 strict 列表已分开，但 strict 列表的日期仍是月粒度，不是逐日精排。
+7. strict 列表已完成逐日精排，但部分 2025–2026 新论文的项目页 / 代码页 / 录用信息仍需后续逐篇补齐到粗读模板。
 
 ### 当前判断
 
 1. 现在优先级最高的是把“代理 + conda + 仓库首个提交”彻底打通。
-2. 基础设施已打通，当前应切换到“论文总表扩充 + 优先级排序 + 粗读模板化”。
+2. 基础设施已打通，当前已进入“strict 核心集精排完成，接下来做粗读模板化”的阶段。
 
 ### 下一步
 
-1. 把 `docs/paper_inventory.md` 扩展到更完整的 2023–2026 候选池。
-2. 对新增高优先级论文补齐固定粗读模板。
-3. 扩展 `docs/paper_list_feishu.md` 到更接近 100 篇。
+1. 对 strict 核心集 39 篇按统一粗读模板逐篇展开。
+2. 对 Top 25 shortlist 继续补硬指标：
+   - 代码
+   - 项目页
+   - benchmark 可比性
+   - 额外数据 / 额外监督 / 额外传感器
+3. 继续维护 broad 全景池，但不再把它和 strict 飞书终版混在一起。
 4. 完成远程 push，确保本地与远程一致。

@@ -74,3 +74,14 @@ bash -ic 'proxy >/dev/null; <command>'
 - 现已拆分出两份对外/对内文档：
   - broad 全景列表：保留任务全貌
   - strict 严格列表：只保留 continuous VLN / VLN-CE 问题空间中的论文
+- 本轮进一步确认 strict 列表的保留规则应当是：
+  - `continuous VLN / VLN-CE` 必须是论文主任务身份
+  - continuous benchmark / challenge / dataset 扩展可以保留
+  - 纯离散 VLN 上游方法、survey、泛 embodied navigation 工作应从 strict 列表移出
+- `arXiv API` 连续批量查询容易触发 `429`，更稳妥的方式是：
+  - 先抽取 arXiv 编号
+  - 再逐篇抓取 `abs` 页面中的 `v1` 提交日期
+- 当前 strict 飞书终版已经完成逐日精排，核心集规模为 39 篇。
+- 经过边界清洗后，用户需要的“飞书可直接粘贴终版”与“内部高质量 shortlist”已经真正分离：
+  - `docs/paper_list_feishu_strict.md` 负责最严格的任务相关核心集
+  - `docs/paper_quality_shortlist.md` 负责高质量 Top 25 优先级排序

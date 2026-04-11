@@ -25,3 +25,8 @@
 - 新增大批 VLN 方法演进链相关论文，当前飞书列表扩至 77 条
 - 继续补 benchmark / survey / graph / volumetric 等相关工作，当前飞书列表扩至 102 条
 - 新增 `paper_list_feishu_strict.md` 和正式排序版 `paper_quality_shortlist.md`
+- 对 strict 列表做边界清洗，只保留“continuous VLN 是主任务身份”的论文
+- 新增 `scripts/collect_arxiv_dates.py` 与 `scripts/fetch_arxiv_abs_dates.py`
+- 已逐篇核对 strict 核心集的 arXiv 首发日期并做逐日倒序重排
+- strict 飞书终版收敛为 39 篇
+- 内部高质量 shortlist 已改写为飞书可直接粘贴的 Top 25 优先级表
