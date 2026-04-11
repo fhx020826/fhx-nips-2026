@@ -102,6 +102,33 @@
    - 到 2020-04-06 的 `Beyond the Nav-Graph`
 26. `docs/paper_quality_shortlist.md` 已重写为飞书可直接粘贴的 Top 25 高质量优先级表。
 
+## 2026-04-11
+
+### 本轮新增
+
+1. 新建第一批 Top 25 统一粗读卡片文档：
+   - `docs/paper_roughread_top25_batch1.md`
+2. 第一批已落地粗读与生态核查的条目共 5 篇：
+   - `ETPNav`
+   - `1st Place Solutions for RxR-Habitat Vision-and-Language Navigation Competition (CVPR 2022)`
+   - `Constraint-Aware Zero-Shot Vision-Language Navigation in Continuous Environments`
+   - `DAgger Diffusion Navigation`
+   - `StreamVLN`
+3. 已对上述条目逐项补充：
+   - 论文页
+   - 代码仓
+   - 项目页
+   - benchmark 身份
+   - 可比性判断
+   - 额外数据 / 额外监督 / 额外传感器依赖
+   - 是否适合作为 baseline / codebase reconnaissance 对象
+4. 当前已形成第一轮明确工程判断：
+   - `ETPNav` 仍是最稳的 continuous VLN baseline / codebase 入口
+   - `RxR-Habitat 2022` 冠军报告更适合作为 `ETPNav` 前身 recipe 参考
+   - `CA-Nav` 更适合作为 progress / constraint / sub-instruction 结构参考
+   - `DifNav` 值得重点跟踪，但公开训练闭环尚不完整
+   - `StreamVLN` 是 history / streaming / deployment 路线高价值新主线，但不应和标准 benchmark baseline 直接等价比较
+
 ### 当前阻塞
 
 1. 论文总表目前仍以“总览池”为主，尚未展开为逐篇固定模板粗读。
@@ -114,11 +141,14 @@
    - 去重复核
    - 内部高质量 25 篇打分校准
 7. strict 列表已完成逐日精排，但部分 2025–2026 新论文的项目页 / 代码页 / 录用信息仍需后续逐篇补齐到粗读模板。
+8. 第一批粗读卡片已经建立，但还只覆盖 Top 25 中的 5 篇，尚未形成完整 Top 25 卡片层。
+9. baseline / codebase reconnaissance 目前仍停留在 paper-card 层，尚未单独抽成“仓库可跑性与依赖风险”文档。
 
 ### 当前判断
 
 1. 现在优先级最高的是把“代理 + conda + 仓库首个提交”彻底打通。
 2. 基础设施已打通，当前已进入“strict 核心集精排完成，接下来做粗读模板化”的阶段。
+3. 当前已正式进入“Top 25 论文卡片化 + baseline/codebase reconnaissance 前置核查”阶段。
 
 ### 下一步
 
@@ -130,3 +160,14 @@
    - 额外数据 / 额外监督 / 额外传感器
 3. 继续维护 broad 全景池，但不再把它和 strict 飞书终版混在一起。
 4. 完成远程 push，确保本地与远程一致。
+5. 第二批优先补：
+   - `Ground Slow, Move Fast`
+   - `NavForesee`
+   - `NaVid`
+   - `DREAMWALKER`
+   - `Open-Nav`
+6. 在第二批粗读之后，单独整理一页 `baseline / codebase reconnaissance` 文档，聚焦：
+   - 仓库是否可跑
+   - 依赖栈是否过旧
+   - 数据 / 权重是否可得
+   - 最小可验证起点应选谁

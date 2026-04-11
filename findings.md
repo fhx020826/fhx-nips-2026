@@ -85,3 +85,48 @@ bash -ic 'proxy >/dev/null; <command>'
 - 经过边界清洗后，用户需要的“飞书可直接粘贴终版”与“内部高质量 shortlist”已经真正分离：
   - `docs/paper_list_feishu_strict.md` 负责最严格的任务相关核心集
   - `docs/paper_quality_shortlist.md` 负责高质量 Top 25 优先级排序
+
+## 2026-04-11
+
+### 第一批粗读卡片
+
+- 已开始把 Top 25 从“列表层”推进到“论文卡片层”，第一批文档为：
+  - `docs/paper_roughread_top25_batch1.md`
+- 当前最先落地卡片的 5 篇是：
+  - `ETPNav`
+  - `RxR-Habitat 2022` 冠军报告
+  - `CA-Nav`
+  - `DifNav`
+  - `StreamVLN`
+
+### baseline / codebase 相关新发现
+
+- `ETPNav` 目前仍是最稳的 continuous VLN baseline / codebase 入口：
+  - `R2R-CE` 与 `RxR-CE` 都有显式训练/评测入口
+  - pretraining / finetuning / checkpoint 都已放出
+  - 但环境老，且依赖 waypoint predictor 和额外预训练数据
+- `RxR-Habitat 2022` 冠军方案更适合视作 `ETPNav` 的前身工程 recipe，而不是单独的长期代码底座：
+  - 已核实官方 starter 在 `VLN-CE` 的 `rxr-habitat-challenge` 分支
+  - 未检索到该技术报告独立维护的官方实现仓库
+- `CA-Nav` 的强项不在“轻量 baseline”，而在：
+  - progress / constraint / sub-instruction bridge
+  - zero-shot 连续导航
+  - real-world deployment 证明
+  但它额外依赖 BLIP2、Grounded-SAM、LLM replies，工程链条更长
+- `DifNav` 是 diffusion 进入 continuous VLN 的关键 direct-hit 论文，但当前公开生态仍不完整：
+  - 评测代码和 checkpoint 已放出
+  - 在线数据增强、训练数据与完整训练代码尚未放出
+  - README 当前只清晰暴露 `R2R-CE` 入口，`RxR-CE` 公开成熟度仍需继续核实
+- `StreamVLN` 是 history / streaming / deployment 路线的重要新主线，但 benchmark 可比性必须单独标注：
+  - 使用了额外导航数据、DAgger 数据和通用多模态数据
+  - 不应直接与只用标准 VLN-CE 数据的 baseline 做无标注对比
+
+### 方法学相关新发现
+
+- 当前高价值论文已经开始明显分成三类：
+  - 稳定 baseline / 工程底座：`ETPNav`
+  - 高层结构接口参考：`CA-Nav`、`Ground Slow, Move Fast`、`NavForesee`
+  - 历史压缩 / 在线推理 / 长程闭环：`StreamVLN`
+- 因此后续文档组织也应该分两层：
+  - 论文卡片层：记录论文方法与实验边界
+  - reconnaissance 层：只记录“仓库能否作为本项目起点”
