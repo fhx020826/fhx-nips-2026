@@ -106,6 +106,14 @@
 
 ### 本轮新增
 
+1. 新建完整列表顺序粗读队列脚本：
+   - `scripts/prepare_roughread_queue.py`
+2. 脚本支持从 `docs/paper_list_feishu_strict.md` 抽取顺序条目，并按 index / batch 输出 `json/jsonl/md scaffold`，用于后续批量粗读自动化。
+3. 新建完整列表粗读卡片文档：
+   - `docs/paper_roughread_full_list_batch1.md`
+4. 已按新模板完成完整列表第 1 篇论文粗读：
+   - `P$^{3}$Nav: End-to-End Perception, Prediction and Planning for Vision-and-Language Navigation`
+5. 当前已明确：后续“从头到尾依次粗读”默认以 `docs/paper_list_feishu_strict.md` 作为正式执行顺序，而不是以 `shortlist` 为唯一入口。
 1. 新建统一论文粗读模板与批量调研协议文档：
    - `docs/paper_roughread_template.md`
 2. 模板已从“自由长文式粗读”升级为“叙述 + 结构化字段”双层格式，新增：
