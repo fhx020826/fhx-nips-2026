@@ -128,6 +128,14 @@
    - `CA-Nav` 更适合作为 progress / constraint / sub-instruction 结构参考
    - `DifNav` 值得重点跟踪，但公开训练闭环尚不完整
    - `StreamVLN` 是 history / streaming / deployment 路线高价值新主线，但不应和标准 benchmark baseline 直接等价比较
+5. 按用户确认，已完成一轮最保守文件清理，删除：
+   - `docs/new_chat_prompt.md`
+   - `tmp/strict_ids.csv`
+   - `tmp/final_candidates.csv`
+   - `tmp/final_candidates_dated.csv`
+   - `progress.md`
+6. 当前未清理但后续仍可继续评估的对象：
+   - `project.md`（内容边界与时效性需要后续再判断）
 
 ### 当前阻塞
 
