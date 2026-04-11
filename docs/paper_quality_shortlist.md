@@ -2,88 +2,93 @@
 
 ## 用途
 
-这个文件不直接作为最终交付给用户的“全量论文列表”，而是项目内部使用的质量分层与优先级记录。
+这是项目内部使用的“高质量论文优先级表”，不等同于对外交付的最全列表。
 
-目标：
+用途：
 
-- 在“全量相关论文 > 100 篇”的基础上
-- 额外筛出约 25 篇高质量论文
-- 用于后续优先粗读、方法归纳、codebase 侦察和 idea 提炼
+- 决定优先精读哪些论文
+- 决定优先复现哪些 codebase / baseline
+- 决定哪些工作更可能为后续方法设计提供直接启发
 
-## 高质量判断标准
+## 评分说明
 
-满足越多越优先：
+分数是内部启发式评分，不是客观事实。用于排序，不用于对外声称。
 
-1. 任务直接相关，尤其是 `R2R-CE / RxR-CE / VLN-CE`
-2. 当时 SOTA / leaderboard 靠前 / challenge 冠军
-3. 顶会顶刊录用，或至少是高可信度的 solid work
-4. 被后续工作频繁继承、引用或对比
-5. 生态好：项目页 / 代码 / 可复现性 / 社区讨论较好
-6. 新且重要：2025–2026 即使引用低，也可因新颖和任务相关性被高优先级保留
+### 评分维度
 
-## 硬性打分模板
+每篇论文满分 35：
 
-后续每篇论文按以下维度给内部评分，便于模式化筛选：
+- 任务直接相关性：0-5
+- benchmark 可比性：0-5
+- 时间新颖性：0-5
+- 影响力与后续继承价值：0-5
+- 结果强度：0-5
+- 生态与复现性：0-5
+- 方法 solid 程度：0-5
 
-| 维度 | 分值 | 说明 |
-|---|---:|---|
-| 任务直接相关性 | 0-5 | 是否直接解决 continuous VLN / VLN-CE |
-| benchmark 可比性 | 0-5 | 是否在 R2R-CE / RxR-CE / VLN-CE 或强相关设定上验证 |
-| 时间新颖性 | 0-5 | 越新且越重要，分越高 |
-| 影响力 | 0-5 | 引用量、社区讨论度、后续继承情况 |
-| 结果强度 | 0-5 | 是否 SOTA / challenge 冠军 / leaderboard 靠前 |
-| 生态与复现性 | 0-5 | 代码、项目页、数据、实现完整度 |
-| 方法 solid 程度 | 0-5 | 不是简单拼接，问题定义清晰、结构完整 |
+### 等级
 
-### 质量等级建议
+- `A+`：31-35
+- `A`：27-30
+- `B+`：23-26
 
-- `A+`: 30 分以上
-- `A`: 26–29 分
-- `B+`: 22–25 分
-- `B`: 18–21 分
-- `C`: 17 分及以下，仅保留作补充背景
+## 排名表
 
-## 来源优先级
+| 排名 | 等级 | 总分 | 论文 | 主要 benchmark / 设定 | 优先用途 | 为什么优先 |
+|---:|---|---:|---|---|---|---|
+| 1 | A+ | 34 | ETPNav: Evolving Topological Planning for Vision-Language Navigation in Continuous Environments | R2R-CE / RxR-CE | baseline / codebase / topo planning | continuous VLN topo 路线代表作，问题定义清楚、工程细节扎实、可直接影响后续方法设计 |
+| 2 | A+ | 34 | Ground Slow, Move Fast: A Dual-System Foundation Model for Generalizable Vision-and-Language Navigation | VLN benchmarks with continuous relevance | high-level architecture | 双系统结构非常贴近“高层理解-低层控制接口缺口”这个核心问题 |
+| 3 | A+ | 33 | StreamVLN: Streaming Vision-and-Language Navigation via SlowFast Context Modeling | VLN-CE benchmarks | history / deployment / streaming | history compression 和在线推理都直接相关，且足够新 |
+| 4 | A+ | 33 | DAgger Diffusion Navigation: DAgger Boosted Diffusion Policy for Vision-Language Navigation | VLN-CE benchmarks | low-level action expert / diffusion baseline | 是 diffusion direct-hit 关键工作，和你后续低层动作建模最贴近 |
+| 5 | A+ | 33 | Constraint-Aware Zero-Shot Vision-Language Navigation in Continuous Environments | R2R-CE / RxR-CE | zero-shot / progress / subgoal | constraint + sub-instruction + progress 结构非常值得精读 |
+| 6 | A+ | 32 | CLASH: Collaborative Large-Small Hierarchical Framework for Continuous Vision-and-Language Navigation | VLN-CE leaderboard | current SOTA / hierarchical collaboration | 代表最新大模型+小模型协作路线，具备很强现实参考价值 |
+| 7 | A | 30 | NavForesee: A Unified Vision-Language World Model for Hierarchical Planning and Dual-Horizon Navigation Prediction | R2R-CE / RxR-CE | world model / hierarchical planning | 高层规划与局部预测统一建模，方法完整度高 |
+| 8 | A | 30 | ETP-R1: Evolving Topological Planning with Reinforcement Fine-tuning for Vision-Language Navigation in Continuous Environments | VLN-CE | topo follow-up / RFT | topo 路线后续强化版本，能帮助判断 topo 是否仍是强主线 |
+| 9 | A | 30 | NaVid: Video-based VLM Plans the Next Step for Vision-and-Language Navigation | VLN-CE | history backbone / planner | video-based history 是非常关键的上层感知与规划参考 |
+| 10 | A | 29 | DREAMWALKER: Mental Planning for Continuous Vision-Language Navigation | VLN-CE | planning / world model | early but strong 的 planning 路线代表作 |
+| 11 | A | 29 | Open-Nav: Exploring Zero-Shot Vision-and-Language Navigation in Continuous Environment with Open-Source LLMs | VLN-CE / real-world | zero-shot reasoning scaffold | open-source LLM + progress estimation + CoT，适合借高层推理结构 |
+| 12 | A | 29 | Beyond the Nav-Graph: Vision-and-Language Navigation in Continuous Environments | VLN-CE / R2R-CE / RxR-CE | task origin / benchmark understanding | continuous VLN 起点，必须优先掌握 |
+| 13 | A | 28 | Cross-modal Map Learning for Vision and Language Navigation | VLN-CE | map baseline / explicit representation | 显式空间表示和 waypoint 设计的早期 solid work |
+| 14 | A | 28 | 1st Place Solutions for RxR-Habitat Vision-and-Language Navigation Competition | RxR-Habitat / VLN-CE | competition baseline / engineering | challenge 冠军方案，对工程与训练 recipe 很重要 |
+| 15 | A | 28 | Dynamic Topology Awareness: Breaking the Granularity Rigidity in Vision-Language Navigation | R2R-CE / RxR-CE | topo granularity | 非常新，且直接针对 topo 粒度刚性问题 |
+| 16 | A | 28 | Let's Reward Step-by-Step: Step-Aware Contrastive Alignment for Vision-Language Navigation in Continuous Environments | VLN-CE | reward shaping / credit assignment | 对长程训练 credit assignment 很关键 |
+| 17 | A | 28 | NavMorph: A Self-Evolving World Model for Vision-and-Language Navigation in Continuous Environments | VLN-CE | world model / memory | self-evolving world model 很新，值得观察是否真有效 |
+| 18 | B+ | 26 | Safe-VLN: Collision Avoidance for Vision-and-Language Navigation of Autonomous Robots Operating in Continuous Environments | R2R-CE | obstacle avoidance / recovery | 把碰撞与恢复明确当成主问题，非常契合你的判断 |
+| 19 | B+ | 26 | GridMM: Grid Memory Map for Vision-and-Language Navigation | R2R-CE | memory / map | memory-map 路线代表，适合借 history 结构 |
+| 20 | B+ | 26 | VLN-R1: Vision-Language Navigation via Reinforcement Fine-Tuning | VLN-CE | RFT / LVLM | RFT 用在 continuous VLN 上，方向值得关注 |
+| 21 | B+ | 25 | SpatialNav: Leveraging Spatial Scene Graphs for Zero-Shot Vision-and-Language Navigation | R2R-CE / RxR-CE | scene graph / zero-shot | 2026 新工作，scene-graph 路线值得保留 |
+| 22 | B+ | 25 | monoVLN: Bridging the Observation Gap between Monocular and Panoramic Vision and Language Navigation | R2R-CE / RxR-CE | monocular gap | 单目观测缺口问题对真实部署有价值 |
+| 23 | B+ | 24 | RoomTour3D: Geometry-Aware Video-Instruction Tuning for Embodied Navigation | RoomTour3D | data / pretraining | 数据与 video-instruction 资源可能对后续训练帮助很大 |
+| 24 | B+ | 24 | HA-VLN: A Benchmark for Human-Aware Navigation in Discrete–Continuous Environments with Dynamic Multi-Human Interactions | HA-VLN | dynamic humans benchmark | 如果后续考虑真实障碍和动态体，这条线很重要 |
+| 25 | B+ | 23 | HiMemVLN: Enhancing Reliability of Open-Source Zero-Shot Vision-and-Language Navigation with Hierarchical Memory System | simulated + real-world VLN | memory / zero-shot reliability | 最新 memory/reliability 路线，值得快速扫读 |
 
-1. arXiv / 官方论文页
-2. 顶会/顶刊正式页面
-3. Awesome-VLN README
-4. Google Scholar 风格检索结果
-5. 项目页 / 代码仓库
+## 复现建议分组
 
-如果来源之间冲突，以更原始、更官方的来源为准。
+### 第一优先：最值得做 baseline / code reconnaissance
 
-## 当前初始短名单（会继续更新）
+1. ETPNav
+2. DAgger Diffusion Navigation
+3. StreamVLN
+4. Constraint-Aware Zero-Shot VLN-CE
+5. DualVLN
 
-| 优先级 | 论文 | 年份 | 原因 |
-|---|---|---:|---|
-| A | Beyond the Nav-Graph | 2020 | continuous VLN 任务起点 |
-| A | Cross-modal Map Learning for Vision and Language Navigation | 2022 | 早期 solid baseline，显式空间表示 |
-| A | 1st Place Solutions for RxR-Habitat Vision-and-Language Navigation Competition | 2022 | challenge 冠军方案 |
-| A | DREAMWALKER | 2023 | planning 路线代表作 |
-| A | ETPNav | 2023/2024 | topo planning 路线代表作 |
-| A | Safe-VLN | 2023 | 明确处理 collision avoidance |
-| A | NaVid | 2024 | video history 路线关键工作 |
-| A | Constraint-Aware Zero-Shot VLN-CE | 2024 | zero-shot + sub-instruction + constraints |
-| A | Open-Nav | 2024 | open-source LLM zero-shot continuous VLN |
-| A | StreamVLN | 2025 | streaming / slow-fast history 关键工作 |
-| A | DAgger Diffusion Navigation | 2025 | diffusion direct-hit 关键工作 |
-| A | DualVLN / Ground Slow, Move Fast | 2025 | 双系统结构关键工作 |
-| A | NavForesee | 2025 | unified world model + hierarchical planning |
-| A | CLASH | 2025 | 最新 leaderboard / SOTA 倾向 |
-| A | ETP-R1 | 2025 | topo 路线强化后续工作 |
-| B | GridMM | 2023 | memory-map 代表工作 |
-| B | Lookahead Exploration with Neural Radiance Representation | 2024 | future observation / exploration 路线 |
-| B | Cog-GA | 2024 | LLM agent 路线代表 |
-| B | NavMorph | 2025 | self-evolving world model |
-| B | SpatialNav | 2026 | scene-graph zero-shot 路线 |
-| B | Dynamic Topology Awareness | 2026 | dynamic topo granularity |
-| B | Step-Aware Contrastive Alignment | 2026 | reward / credit assignment 路线 |
-| B | monoVLN | 2025 | monocular 观测缺口方向 |
-| B | RoomTour3D | 2024 | 数据与预训练资源关键补充 |
-| B | HA-VLN | 2025 | 动态人类 benchmark 扩展 |
+### 第二优先：最值得做高层结构参考
+
+1. NaVid
+2. Open-Nav
+3. NavForesee
+4. DREAMWALKER
+5. SpatialNav
+
+### 第三优先：最值得补训练范式和 benchmark 认知
+
+1. VLN-R1
+2. Step-Aware Contrastive Alignment
+3. RxR-Habitat Competition Winner
+4. HA-VLN
+5. RoomTour3D
 
 ## 说明
 
-1. 这里的等级只是当前阶段性判断，不是最终结论。
-2. 后续会在补齐 >100 篇全量列表后，重新校准这个 shortlist。
+1. 这是当前阶段的内部排序，不是最终定论。
+2. 如果后续发现代码不可用、结果不可比、生态差，排序应动态调整。

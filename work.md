@@ -82,6 +82,9 @@
    - 对内：高质量 shortlist（目标约 25 篇）
 18. 新增内部质量短名单文件：
    - `docs/paper_quality_shortlist.md`
+19. 新增严格终版飞书列表：
+   - `docs/paper_list_feishu_strict.md`
+20. 内部 shortlist 已改为正式排序版，包含分数、用途与优先级建议。
 
 ### 当前阻塞
 
@@ -94,6 +97,7 @@
    - 日期精排
    - 去重复核
    - 内部高质量 25 篇打分校准
+7. 当前 broad 列表和 strict 列表已分开，但 strict 列表的日期仍是月粒度，不是逐日精排。
 
 ### 当前判断
 

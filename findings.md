@@ -71,3 +71,6 @@ bash -ic 'proxy >/dev/null; <command>'
 - 当前下一阶段重点应转向：
   - 日期与去重校验
   - 内部高质量 shortlist 的硬指标打分
+- 现已拆分出两份对外/对内文档：
+  - broad 全景列表：保留任务全貌
+  - strict 严格列表：只保留 continuous VLN / VLN-CE 问题空间中的论文
