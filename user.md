@@ -54,6 +54,8 @@ bash -ic 'proxy >/dev/null; <command>'
 16. 主论文池默认只保留 `ground-agent embodied navigation in continuous environments` 相关论文。
 17. `UAV / aerial / drone` 导航、纯离散 VLN、视觉提示替代语言指令的变体任务，默认不进入主执行总表，也不继续维护对应粗读。
 18. 与主线直接相关的 benchmark / robustness / real-robot / long-horizon 扩展工作可以保留，但需要显式标注它们不是标准 `R2R-CE / RxR-CE` 主榜方法。
+19. 当前唯一有效的粗读正文目录是 `docs/paper_roughreads/`；旧的 batch 索引、旧 roughread 目录和历史候选清单默认视为过时资产，应及时清理。
+20. `P^3Nav` 的最新粗读稿是当前新风格基准，后续所有粗读默认对齐它的内容密度、层次和写法。
 
 ## 环境隔离
 

@@ -3,9 +3,10 @@
 说明：
 - 本轮按更严格口径重构，只保留与当前项目真正相关的论文：`ground-agent embodied navigation`、`language-conditioned`、`continuous / closed-loop environment`，以及直接服务于这条主线的 benchmark、robustness、real-robot 和 long-horizon 扩展工作。
 - 已从旧版 `61` 篇总表中剔除 `11` 篇明显偏离当前主线的论文：`AirNav`、`IndoorUAV`、`SoraNav`、`VPN`、`SkyVLN`、`TRAVEL`、`RoomTour3D`、`Bootstrapping Language-Guided Navigation Learning with Self-Refining Data Flywheel`、`Towards Realistic UAV Vision-Language Navigation`、`AerialVLN`、`Room-Across-Room`。
-- 本轮新增纳入 `25` 篇论文，均已在条目前用 `【新增】` 标出，并单独汇总到 `docs/paper_list_new_additions_round2.md`，作为下一轮粗读入口。
+- 本轮新增纳入 `25` 篇论文，均已在条目前用 `【新增】` 标出。
 - 当前主表共 `75` 篇，按首次公开时间从新到旧排列；能核到 `arXiv v1` 的优先用 `arXiv v1` 日期，否则用 publisher / DOI / OpenAlex 可核实日期。
 - 这一版是之后批量粗读、shortlist 维护、codebase reconnaissance 的唯一执行总表。
+- 当前唯一有效的粗读正文目录是：`docs/paper_roughreads/`。
 
 1. 【新增】LatentPilot: Scene-Aware Vision-and-Language Navigation by Dreaming Ahead with Latent Visual Reasoning | 2026-03-31 | https://arxiv.org/abs/2603.29165
 2. 【新增】NavTrust: Benchmarking Trustworthiness for Embodied Navigation | 2026-03-19 | https://arxiv.org/abs/2603.19229
