@@ -1,44 +1,48 @@
 # 连续具身导航高质量论文列表（飞书可直接粘贴）
 
 说明：
-- 本列表已按新口径重置，不继承旧版 shortlist 的排名、分组和历史判断。
-- 只收录已经完成当前新风格粗读、并且明确判断“值得持续投入”的论文。
-- 排序方式与主总表一致：按时间顺序从新到旧排列，不额外做人为排名。
-- 后续每完成一批新的粗读，就同步更新这一份列表。
+- 这一版 shortlist 按更严格标准重新筛选，不继承旧判断。
+- 只有同时满足以下条件的论文，才允许进入本列表：
+  - 相对较新，但已经出现一定学术传播，不是刚公开就直接入选
+  - 引用量达到“明显高于同批新论文”的水平
+  - 实验充分，至少在主 benchmark 上有可信主结果和分析
+  - 已被顶会或顶刊正式录用
+  - 代码、模型、数据集三类入口整体开放，至少不是明显缺失状态
+- 另外，前提仍然是：该论文已经完成当前新风格粗读，并且与本项目主线高度相关。
 
-## 当前已纳入的论文
+## 当前筛选结果
 
-1. 【新增】LatentPilot: Scene-Aware Vision-and-Language Navigation by Dreaming Ahead with Latent Visual Reasoning | 2026-03-31
-当前判断：
-- 值得精读
-- 值得优先侦察代码
-- 训练期 future-privileged supervision、Pilot Token 和 PilotLoop 对当前主线的高层 latent interface 与闭环数据回流都很有参考价值
+截至 `2026-04-12`，已完成粗读的 `001-010` 篇论文中，`暂无论文满足以上全部条件`，因此当前高质量论文列表为空。
 
-2. 【新增】NavTrust: Benchmarking Trustworthiness for Embodied Navigation | 2026-03-19
-当前判断：
-- 值得精读
-- 值得作为 benchmark 与 protocol 参考长期保留
-- 对 corruption taxonomy、depth robustness、instruction safeguard 和后续公平比较都直接相关
+## 这次重筛后为什么清空
 
-3. P$^{3}$Nav: End-to-End Perception, Prediction and Planning for Vision-and-Language Navigation | 2026-03-18
-当前判断：
-- 值得精读
-- 值得继续作为高层接口设计参考
-- 对 `perception - prediction - planning` 统一流水线、future-aware planning interface 和 planner 输入重构都有直接价值
+这次清空不是因为前 10 篇都“不值得读”，而是因为它们虽然有不少值得精读的论文，但仍达不到你要求的 `高质量论文列表` 标准。
 
-4. 【新增】EmergeNav: Structured Embodied Inference for Zero-Shot Vision-and-Language Navigation in Continuous Environments | 2026-03-16
-当前判断：
-- 值得精读
-- 更适合作为方法结构参考，而不是复现入口
-- `Plan-Solve-Transition`、GIPE、dual-memory 和 role-separated sensing 对 zero-shot 连续导航的执行结构设计很有启发
+具体来看：
+- `001-005` 中，多篇论文仍处于 `arXiv-only` 或 `代码 / 模型 / 数据未完整公开` 状态，且当前引用仍极低，不能继续保留在 shortlist 中。
+- `006 CorrectNav` 虽然已经由 `AAAI 2026` 正式录用，实验也很强，但截至当前仍未检到官方项目页、代码、模型和数据入口，同时 OpenAlex 引用为 `0`，因此仍不能入选。
+- `007-010` 则普遍存在以下至少一项硬伤：
+  - 仅 arXiv，正式录用未核实
+  - 代码未放出或仓库极不完整
+  - 模型与数据未公开
+  - 引用为 `0`
 
-5. 【新增】HiMemVLN: Enhancing Reliability of Open-Source Zero-Shot Vision-and-Language Navigation with Hierarchical Memory System | 2026-03-16
-当前判断：
-- 值得精读
-- 值得继续侦察代码
-- `Navigation Amnesia` 诊断、Localer/Globaler 分工和 open-source zero-shot 提升幅度都非常贴近当前主线
+## 当前结论
 
-## 当前未纳入说明
+当前已经完成粗读的 `001-010` 更适合分成两类理解：
+- `值得精读 / 值得方法参考`
+- `值得进入严格高质量 shortlist`
 
-- 当前前 5 篇中已全部完成纳入判断。
-- 后续论文仍按 “先完成新风格粗读，再决定是否进入 shortlist” 的规则继续更新。
+前者现在已经有不少，后者截至目前仍然没有。
+
+## 下一步策略
+
+后续不再为了维持 shortlist 数量而放宽标准。
+
+接下来会继续沿总表往后推进粗读，并重点关注更可能满足硬条件的论文：
+- 较早公开、已有一定引用积累的工作
+- 正式顶会 / 顶刊论文
+- 代码、模型、数据较完整公开的工作
+- 在 R2R-CE / RxR-CE / real-robot 等主线 benchmark 上有充分实验的工作
+
+一旦后续批次中出现真正满足全部条件的论文，再恢复 shortlist 的实质内容。
