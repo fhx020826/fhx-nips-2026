@@ -57,6 +57,9 @@
 8. 已把临时调研目录纳入忽略列表：
    - `tmp_papers/`
    - `tmp_repos/`
+9. 已清理两项历史未跟踪临时产物：
+   - `configs/paper_metadata/001_p3nav.json`
+   - `scripts/render_roughread_card.py`
 
 ### 当前确认的流程约束
 
