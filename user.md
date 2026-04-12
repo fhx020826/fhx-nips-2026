@@ -51,6 +51,9 @@ bash -ic 'proxy >/dev/null; <command>'
 13. 重点应放在：论文真正解决的关键缺口、原文图表与主实验传达的核心结论、方法中最重要的设计判断、以及对当前课题的真实启发。
 14. 重要部分要展开写透，不重要或边缘部分可以简写，整体要求详略得当。
 15. 粗读中必须体现独立分析和总结，不能只换一种说法复述摘要或模板字段。
+16. 主论文池默认只保留 `ground-agent embodied navigation in continuous environments` 相关论文。
+17. `UAV / aerial / drone` 导航、纯离散 VLN、视觉提示替代语言指令的变体任务，默认不进入主执行总表，也不继续维护对应粗读。
+18. 与主线直接相关的 benchmark / robustness / real-robot / long-horizon 扩展工作可以保留，但需要显式标注它们不是标准 `R2R-CE / RxR-CE` 主榜方法。
 
 ## 环境隔离
 

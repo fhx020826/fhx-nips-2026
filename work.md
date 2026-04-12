@@ -44,6 +44,25 @@
 7. 已启动第 `1` 篇论文 `P^3Nav` 的新版粗读预览重写，旧稿不覆盖，改为单独预览文件验证写法。
 8. 已按用户新要求将第 `1` 篇 `P^3Nav` 正式稿直接重写并覆盖到：
    - `docs/paper_roughreads_full/001_p3nav.md`
+9. 已完成主论文池的一轮重新筛查与扩充：
+   - 将总表从“宽口径 continuous VLN 相关完整版”收紧为“连续具身地面导航主线”
+   - 从旧版 `61` 篇总表中剔除 `11` 篇不再相关的论文
+   - 新增补入 `25` 篇论文
+   - 重构后的主表现为 `75` 篇
+10. 已新增：
+   - `docs/paper_list_new_additions_round2.md`
+   用于承接下一轮新增论文粗读
+11. 已删除不再属于主线的粗读正文：
+   - `docs/paper_roughreads_full/011_airnav.md`
+   - `docs/paper_roughreads_full/013_indooruav.md`
+   - `docs/paper_roughreads_full/018_soranav.md`
+   - `docs/paper_roughreads_full/025_vpn.md`
+12. 已同步更新：
+   - `docs/paper_quality_shortlist.md`
+   - `docs/paper_roughread_full_list_batch3.md`
+   - `docs/paper_roughread_full_list_batch4.md`
+   - `project.md`
+   - `user.md`
 
 ### 本轮新增的写作约束更新
 
@@ -115,45 +134,52 @@
 ### 当前判断
 
 1. 当前项目仍处于“粗读资产建设 + shortlist 校正 + baseline / codebase reconnaissance 前置侦察”阶段。
-2. 当前 `16` 到 `25` 批次中，最值得后续优先精读的是：
+2. 现在的论文主池已经不再包含 UAV / aerial / prompt-only 变体和纯离散上游任务，后续粗读不会再沿旧口径继续扩散。
+3. 当前 `16` 到 `25` 批次中，最值得后续优先精读的是：
    - `Ground Slow, Move Fast`
    - `NavForesee`
    - `JanusVLN`
    - `MonoDream`
    - `DAgger Diffusion Navigation`
-3. 当前 `16` 到 `25` 批次中，最值得后续优先看代码的是：
+4. 当前 `16` 到 `25` 批次中，最值得后续优先看代码的是：
    - `Ground Slow, Move Fast`
    - `JanusVLN`
    - `VLN-Zero`
-   - `VPN`
-4. 这一轮之后，更清晰的研究关注点仍然是：
+5. 这一轮之后，更清晰的研究关注点仍然是：
    - explicit world representation
    - topo granularity / graph constraints
    - hierarchical planning / progress / recovery
    - streaming / compressed history
    - diffusion low-level expert
    - monocular latent imagination
-5. 对于 `P^3Nav` 这类新论文，后续粗读要更强调：
+6. 对于 `P^3Nav` 这类新论文，后续粗读要更强调：
    - 它到底补的是哪一层接口缺口
    - 图表和消融真正支持了什么判断
    - 与当前课题的接口价值，而不只是模板摘要
-6. `P^3Nav` 预览稿需要继续升级为“研究笔记型”写法：
+7. `P^3Nav` 预览稿需要继续升级为“研究笔记型”写法：
    - 先给高层结论
    - 再抓最关键的方法逻辑和图表证据
    - 再讲真正有启发的实验与消融
    - 最后给出值得继续投入的判断
-7. `P^3Nav` 正式稿已完成覆盖；如果用户认可，这一写法将作为后续批量粗读的新标准。
+8. `P^3Nav` 正式稿已完成覆盖；如果用户认可，这一写法将作为后续批量粗读的新标准。
 
 ### 下一步
 
-1. 等待用户确认 `P^3Nav` 正式稿的文风是否满意。
-2. 若这版通过，就按同一原则继续后续论文，不再沿用旧模板风格。
-3. 继续生成第 `26` 到第 `35` 篇详细粗读卡片。
-4. 每完成一批，继续同步复核 `docs/paper_quality_shortlist.md`。
-5. 在粗读推进同时，逐步准备高优先级论文的 codebase reconnaissance，当前优先顺序建议先看：
+1. 从 `docs/paper_list_new_additions_round2.md` 启动下一轮粗读，而不是沿旧版顺序继续。
+2. 新增论文里建议优先粗读：
+   - `PROSPECT`
+   - `LatentPilot`
+   - `NaVIDA`
+   - `NavTrust`
+   - `VLNVerse`
+   - `SmartWay`
+   - `InstructNav`
+   - `Waypoint Models / LAW`
+3. 每完成一批，继续同步复核 `docs/paper_quality_shortlist.md`。
+4. 在粗读推进同时，逐步准备高优先级论文的 codebase reconnaissance，当前优先顺序建议先看：
    - `Ground Slow, Move Fast`
    - `JanusVLN`
    - `ETP-R1`
    - `CLASH`
    - `StreamVLN`
-6. 在进入任何 Python 运行型任务前，先解决 conda 环境可用性问题。
+5. 在进入任何 Python 运行型任务前，先解决 conda 环境可用性问题。

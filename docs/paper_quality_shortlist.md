@@ -106,28 +106,48 @@
 9. GC-VLN: Instruction as Graph Constraints for Training-free Vision-and-Language Navigation
 10. HA-VLN: A Benchmark for Human-Aware Navigation in Discrete-Continuous Environments with Dynamic Multi-Human Interactions, Real-World Validation, and an Open Leaderboard
 11. Towards Long-Horizon Vision-Language Navigation: Platform, Benchmark and Method
-12. RoomTour3D: Geometry-Aware Video-Instruction Tuning for Embodied Navigation
-13. MonoDream: Monocular Vision-Language Navigation with Panoramic Dreaming
-14. Mind the Error! Detection and Localization of Instruction Errors in Vision-and-Language Navigation
+12. MonoDream: Monocular Vision-Language Navigation with Panoramic Dreaming
+13. Mind the Error! Detection and Localization of Instruction Errors in Vision-and-Language Navigation
 
 原因：这部分论文都很值得保留，但当前更适合作为专项结构参考而不是第一优先复现底座。
 - `VLN-Zero`：zero-shot continuous VLN 的代表性系统，官方仓库已可运行，但依赖 environment-specific exploration 与 `OPENAI_API_KEY`，更适合作为零样本部署参考。
 - `GC-VLN`：`CoRL 2025` 已确认，图约束与回溯机制非常有启发，但当前官方仓库仍偏项目展示，不能按成熟开源基线处理。
 - `MonoDream`：是 monocular VLN-CE 里很值得保留的 latent imagination 路线论文，不用外部 web 数据且跨数据集泛化强，但当前未核到官方代码和项目页。
 
-## 第四部分：当前不建议放进第一优先 shortlist，但可放在完整时间线大表里的
+## 第四部分：本轮新增并纳入内部跟踪池的
 
-1. AirNav: A Large-Scale Real-World UAV Vision-and-Language Navigation Dataset with Natural and Diverse Instructions
-原因：更偏 UAV 数据集与真实场景扩展，不是当前 Habitat continuous 主 benchmark 主线，而且当前公开生态以训练集与模型权重为主，完整 `val/test` 释放状态仍需继续跟踪。
+1. PROSPECT: Unified Streaming Vision-Language Navigation via Semantic-Spatial Fusion and Latent Predictive Representation
+原因：同时覆盖 `streaming context`、`latent predictive learning` 和 `VLN-CE + real robot`，是这轮新增论文里最值得尽快粗读和后续代码侦察的系统工作之一。
 
-2. IndoorUAV: Benchmarking Vision-Language UAV Navigation in Continuous Indoor Environments
-原因：很有价值的室内 UAV benchmark 扩展，但平台假设、动作空间和 `GPT-4o` 指令分解设定都与 Habitat ground-agent 主线不同，更适合做 benchmark 与 hierarchical bridge 参考。
+2. LatentPilot: Scene-Aware Vision-and-Language Navigation by Dreaming Ahead with Latent Visual Reasoning
+原因：直接把 `dreaming ahead` 做进 `R2R-CE / RxR-CE` 主线，并且强调 action-conditioned visual dynamics，和当前“高层语义到低层控制桥接”非常贴近。
 
-3. AerialVLN: Vision-and-Language Navigation for UAVs
-原因：很重要的 UAV VLN 起点，但与 `R2R-CE / RxR-CE` 主线存在平台差异。
+3. NaVIDA: Vision-Language Navigation with Inverse Dynamics Augmentation
+原因：把 inverse dynamics supervision 和 hierarchical action chunking 用在 VLN 上，既补稳定性也补 longer-horizon visual dynamics，属于结构上很值得精读的新工作。
 
-4. SkyVLN: Vision-and-Language Navigation and NMPC Control for UAVs in Urban Environments
-原因：UAV urban navigation 很有意思，但当前与室内 Habitat 主线接口较远。
+4. NavTrust: Benchmarking Trustworthiness for Embodied Navigation
+原因：虽然是 robustness benchmark，但它直接把 instruction corruption、RGB-depth corruption 和真实部署可靠性带回当前主线，后续做鲁棒性分析时价值很高。
 
-5. Enhancing Large Language Models with RAG for Visual Language Navigation in Continuous Environments
+5. VLNVerse: A Benchmark for Vision-Language Navigation with Versatile, Embodied, Realistic Simulation and Evaluation
+原因：它不是传统 `R2R-CE` 主榜延伸，而是重新做了 realistic physics 和 full-kinematics embodiment 的大 benchmark，值得作为后续 benchmark 版图更新的重要节点。
+
+6. SmartWay / Fast-SmartWay
+原因：这是当前 zero-shot waypoint + backtracking 路线里最值得连读的一组论文，尤其适合补 waypoint quality、history-aware reasoning 和 recovery 机制。
+
+7. InstructNav: Zero-shot System for Generic Instruction Navigation in Unexplored Environment
+原因：是 foundation-model zero-shot continuous instruction navigation 的早期关键工作，不只覆盖 `R2R-CE`，还连到 ObjNav 和 real robot，历史位置很重要。
+
+8. Waypoint Models / LAW / Hierarchical Cross-Modal Agent
+原因：这三篇是旧表缺失的 foundational chain，补齐后，连续导航从 `robo-vln -> waypoint -> LAW -> ETP / SmartWay` 的方法谱系才完整。
+
+9. ComposableNav: Instruction-Following Navigation in Dynamic Environments via Composable Diffusion
+原因：如果后面要专门看 dynamic environment + diffusion trajectory composition，这篇会比单纯 waypoint papers 更接近连续控制建模。
+
+10. FSR-VLN: Fast and Slow Reasoning for Vision-Language Navigation with Hierarchical Multi-modal Scene Graph
+原因：虽然不是 Habitat 主榜论文，但它把 hierarchical multi-modal scene graph、fast-slow reasoning 和 real humanoid deployment 串了起来，适合作为 embodied system reference。
+
+11. Zero-Shot Vision-and-Language Navigation with Collision Mitigation in Continuous Environment
+原因：这篇比通用 zero-shot paper 更专注于 collision-aware continuous control，对 obstacle avoidance / recovery 支线有直接价值。
+
+12. Enhancing Large Language Models with RAG for Visual Language Navigation in Continuous Environments
 原因：问题相关，但目前更适合作为补充性尝试，不宜放在主方法参考的前列。

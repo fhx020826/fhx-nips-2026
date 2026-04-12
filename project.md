@@ -37,27 +37,31 @@
 
 仓库中已经形成以下主要论文资产：
 - `docs/paper_list_feishu_strict.md`
-  说明：完整列表顺序执行入口，当前共 `61` 篇
+  说明：当前唯一执行总表，已按“连续具身地面导航主线”重构，现共 `75` 篇
+- `docs/paper_list_new_additions_round2.md`
+  说明：相对旧版总表新增纳入的 `25` 篇论文清单，作为下一轮粗读入口
 - `docs/paper_quality_shortlist.md`
   说明：内部高质量论文列表，按优先级分层维护
 - `docs/paper_roughreads_full/`
   说明：按单论文单文件落盘的详细粗读卡片
 
-截至目前，已完成前 `10` 篇粗读卡片：
-- `001_p3nav.md`
-- `002_emergenav.md`
-- `003_himemvln.md`
-- `004_stepaware.md`
-- `005_eventkg.md`
-- `006_oneagent.md`
-- `007_dynatopo.md`
-- `008_spatialvln.md`
-- `009_spatialnav.md`
-- `010_seqwalker.md`
+截至目前，已完成前 `25` 篇粗读卡片中的主线部分；由于总表口径收紧，以下 `4` 篇已从主线资产中移除并删除正文文件：
+- `011_airnav.md`
+- `013_indooruav.md`
+- `018_soranav.md`
+- `025_vpn.md`
 
-并已生成两批索引：
+当前仍保留并持续维护的详细粗读卡片共 `21` 篇，对应：
+- `001` 到 `010`
+- `012`
+- `014` 到 `017`
+- `019` 到 `024`
+
+并已生成四批索引文档：
 - `docs/paper_roughread_full_list_batch1.md`
 - `docs/paper_roughread_full_list_batch2.md`
+- `docs/paper_roughread_full_list_batch3.md`
+- `docs/paper_roughread_full_list_batch4.md`
 
 ## 当前粗读流程
 
@@ -85,7 +89,8 @@
 ## 当前优先级
 
 当前默认第一优先任务是：
-- 继续按顺序完成 `61` 篇列表的粗读卡片
+- 先按新口径维护 `75` 篇主表与新增论文清单
+- 优先从 `docs/paper_list_new_additions_round2.md` 开始补新一轮粗读
 - 每一批同步核查 shortlist
 - 在粗读推进中逐渐明确最值得优先侦察的代码底座
 
