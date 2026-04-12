@@ -25,7 +25,7 @@
 |---:|---|---|---|---|---|
 | 1 | ETPNav: Evolving Topological Planning for Vision-Language Navigation in Continuous Environments | 2023-04-06 | TPAMI 线 + arXiv + 官方代码 | 最稳 baseline / topo planning / codebase | continuous VLN 最成熟的经典强基线之一，结构清晰，代码与实验生态最完整 |
 | 2 | JanusVLN: Decoupling Semantics and Spatiality with Dual Implicit Memory for Vision-Language Navigation | 2025-09-26 | ICLR 2026 + arXiv + 官方代码 | memory 主线 / 新 SOTA / 高价值精读 | dual implicit memory 正中 history 与 spatial interface 问题，而且代码和项目页完整 |
-| 3 | Ground Slow, Move Fast: A Dual-System Foundation Model for Generalizable Vision-and-Language Navigation | 2025-12-09 | arXiv | 高层架构参考 | 双系统分工直接命中“高层语义-低层控制接口缺口” |
+| 3 | Ground Slow, Move Fast: A Dual-System Foundation Model for Generalizable Vision-and-Language Navigation | 2025-12-09 | ICLR 2026 + arXiv + 官方代码/模型/数据 | 高层架构参考 / 代码侦察高优先 | 双系统分工直接命中“高层语义-低层控制接口缺口”，而且资源生态已明显成熟 |
 | 4 | One Agent to Guide Them All: Empowering MLLMs for Vision-and-Language Navigation via Explicit World Representation | 2026-02-17 | arXiv | explicit world representation / zero-shot sim2real | 把 `RGB-D` metric world representation 做成跨 embodiment 接口，结构价值很高，但 `RxR-CE` 结果基于 sampled subset |
 | 5 | P$^{3}$Nav: End-to-End Perception, Prediction and Planning for Vision-and-Language Navigation | 2026-03-18 | arXiv | perception-prediction-planning 一体化 | 同时补 perception / future waypoint / planning 三个缺口，且直接报告 R2R-CE / RxR-CE |
 | 6 | StreamVLN: Streaming Vision-and-Language Navigation via SlowFast Context Modeling | 2025-07-07 | arXiv + 官方代码 + 项目页 | history / streaming / deployment | long-context 压缩、KV cache 复用、在线闭环非常有参考价值 |
@@ -107,7 +107,13 @@
 10. HA-VLN: A Benchmark for Human-Aware Navigation in Discrete-Continuous Environments with Dynamic Multi-Human Interactions, Real-World Validation, and an Open Leaderboard
 11. Towards Long-Horizon Vision-Language Navigation: Platform, Benchmark and Method
 12. RoomTour3D: Geometry-Aware Video-Instruction Tuning for Embodied Navigation
-13. Mind the Error! Detection and Localization of Instruction Errors in Vision-and-Language Navigation
+13. MonoDream: Monocular Vision-Language Navigation with Panoramic Dreaming
+14. Mind the Error! Detection and Localization of Instruction Errors in Vision-and-Language Navigation
+
+原因：这部分论文都很值得保留，但当前更适合作为专项结构参考而不是第一优先复现底座。
+- `VLN-Zero`：zero-shot continuous VLN 的代表性系统，官方仓库已可运行，但依赖 environment-specific exploration 与 `OPENAI_API_KEY`，更适合作为零样本部署参考。
+- `GC-VLN`：`CoRL 2025` 已确认，图约束与回溯机制非常有启发，但当前官方仓库仍偏项目展示，不能按成熟开源基线处理。
+- `MonoDream`：是 monocular VLN-CE 里很值得保留的 latent imagination 路线论文，不用外部 web 数据且跨数据集泛化强，但当前未核到官方代码和项目页。
 
 ## 第四部分：当前不建议放进第一优先 shortlist，但可放在完整时间线大表里的
 
