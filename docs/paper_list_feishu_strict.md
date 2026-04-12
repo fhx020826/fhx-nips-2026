@@ -3,6 +3,7 @@
 说明：
 
 - 这一版不再采用“最窄 strict”口径，而是按你的要求扩展为 `continuous VLN / VLN-CE 相关完整版`。
+- 当前列表实际共 `61` 篇；如果后续有新增或剔除，请同步更新这里的总数，避免后续批处理时仍沿用“60 篇”旧口径。
 - 保留范围：
   - `continuous VLN / VLN-CE` 主任务论文
   - 直接服务于 `R2R-CE / RxR-CE / Habitat` 的 benchmark / dataset / challenge / 变体设定论文

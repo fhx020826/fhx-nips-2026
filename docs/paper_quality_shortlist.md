@@ -26,7 +26,7 @@
 | 1 | ETPNav: Evolving Topological Planning for Vision-Language Navigation in Continuous Environments | 2023-04-06 | TPAMI 线 + arXiv + 官方代码 | 最稳 baseline / topo planning / codebase | continuous VLN 最成熟的经典强基线之一，结构清晰，代码与实验生态最完整 |
 | 2 | JanusVLN: Decoupling Semantics and Spatiality with Dual Implicit Memory for Vision-Language Navigation | 2025-09-26 | ICLR 2026 + arXiv + 官方代码 | memory 主线 / 新 SOTA / 高价值精读 | dual implicit memory 正中 history 与 spatial interface 问题，而且代码和项目页完整 |
 | 3 | Ground Slow, Move Fast: A Dual-System Foundation Model for Generalizable Vision-and-Language Navigation | 2025-12-09 | arXiv | 高层架构参考 | 双系统分工直接命中“高层语义-低层控制接口缺口” |
-| 4 | One Agent to Guide Them All: Empowering MLLMs for Vision-and-Language Navigation via Explicit World Representation | 2026-02-17 | arXiv | explicit world representation / zero-shot sim2real | 把 metric world representation 做成跨 embodiment 接口，和你的研究判断高度一致 |
+| 4 | One Agent to Guide Them All: Empowering MLLMs for Vision-and-Language Navigation via Explicit World Representation | 2026-02-17 | arXiv | explicit world representation / zero-shot sim2real | 把 `RGB-D` metric world representation 做成跨 embodiment 接口，结构价值很高，但 `RxR-CE` 结果基于 sampled subset |
 | 5 | P$^{3}$Nav: End-to-End Perception, Prediction and Planning for Vision-and-Language Navigation | 2026-03-18 | arXiv | perception-prediction-planning 一体化 | 同时补 perception / future waypoint / planning 三个缺口，且直接报告 R2R-CE / RxR-CE |
 | 6 | StreamVLN: Streaming Vision-and-Language Navigation via SlowFast Context Modeling | 2025-07-07 | arXiv + 官方代码 + 项目页 | history / streaming / deployment | long-context 压缩、KV cache 复用、在线闭环非常有参考价值 |
 | 7 | DAgger Diffusion Navigation: DAgger Boosted Diffusion Policy for Vision-Language Navigation | 2025-08-13 | arXiv + 部分公开代码 | diffusion / 低层动作专家 | 是 continuous VLN 中最关键的 diffusion direct-hit 之一 |
@@ -39,12 +39,12 @@
 | 14 | DREAMWALKER: Mental Planning for Continuous Vision-and-Language Navigation | 2023-08-14 | ICCV 2023 + arXiv | planning / mental simulation | 是早期 world-model / planning 主线的重要代表 |
 | 15 | Open-Nav: Exploring Zero-Shot Vision-and-Language Navigation in Continuous Environment with Open-Source LLMs | 2024-09-27 | arXiv | open-source LLM zero-shot scaffold | zero-shot CE 方向里最值得保留的公开基线之一 |
 | 16 | View Invariant Learning for Vision-Language Navigation in Continuous Environments | 2025-07-05 | arXiv | viewpoint robustness / post-training | 直接针对 viewpoint generalization gap，且仍绑定 R2R-CE / RxR-CE |
-| 17 | Dynamic Topology Awareness: Breaking the Granularity Rigidity in Vision-Language Navigation | 2026-01-29 | arXiv | topo granularity | 非常新，且正面修 topo 粒度刚性问题 |
-| 18 | Spatial-VLN: Zero-Shot Vision-and-Language Navigation With Explicit Spatial Perception and Exploration | 2026-01-19 | arXiv | zero-shot / spatial exploration | 直接围绕 continuous complex scenes 的 spatial bottleneck 展开 |
+| 17 | Dynamic Topology Awareness: Breaking the Granularity Rigidity in Vision-Language Navigation | 2026-01-29 | arXiv + 官方代码 | topo granularity | 非常新，且正面修 topo 粒度刚性问题，同时具备代码侦察价值 |
+| 18 | Spatial-VLN: Zero-Shot Vision-and-Language Navigation With Explicit Spatial Perception and Exploration | 2026-01-19 | arXiv + 项目页 | zero-shot / spatial exploration | 直接围绕复杂空间场景的 spatial bottleneck 展开，但更适合作为空间推理与部署参考，不是标准主榜 baseline |
 | 19 | NavMorph: A Self-Evolving World Model for Vision-and-Language Navigation in Continuous Environments | 2025-06-30 | arXiv | world model / online adaptation | 强调环境动态建模与在线适配，和 closed-loop stability 关系紧密 |
 | 20 | VLN-R1: Vision-Language Navigation via Reinforcement Fine-Tuning | 2025-06-20 | arXiv + 项目页 | LVLM / RFT / long-short memory | 把 RFT 直接带入 VLN-CE，是后续 reasoning 路线的重要参照 |
 | 21 | GC-VLN: Instruction as Graph Constraints for Training-free Vision-and-Language Navigation | 2025-09-12 | CoRL 2025 + arXiv | training-free / graph constraints | 结构性强，适合作为图约束路线参考 |
-| 22 | SpatialNav: Leveraging Spatial Scene Graphs for Zero-Shot Vision-and-Language Navigation | 2026-01-11 | arXiv | scene graph / zero-shot | scene-graph + zero-shot 在 CE 场景里值得重点保留 |
+| 22 | SpatialNav: Leveraging Spatial Scene Graphs for Zero-Shot Vision-and-Language Navigation | 2026-01-11 | arXiv | scene graph / zero-shot | scene-graph + zero-shot 在 CE 场景里值得保留，但要明确它建立在 pre-exploration 与 sampled subset 设定上 |
 | 23 | Safe-VLN: Collision Avoidance for Vision-and-Language Navigation of Autonomous Robots Operating in Continuous Environments | 2023-11-06 | arXiv | obstacle avoidance / recovery | 明确把 collision / recovery 当主问题，非常契合你的痛点 |
 | 24 | GridMM: Grid Memory Map for Vision-and-Language Navigation | 2023-07-24 | arXiv | memory / map | memory-map 方向的代表作之一 |
 | 25 | Bridging the Gap Between Learning in Discrete and Continuous Environments for Vision-and-Language Navigation | 2022-03-05 | arXiv | waypoint predictor / bridge baseline | 对理解 discrete-to-continuous 接口至关重要 |
@@ -94,14 +94,17 @@
 
 1. EmergeNav: Structured Embodied Inference for Zero-Shot Vision-and-Language Navigation in Continuous Environments
 2. HiMemVLN: Enhancing Reliability of Open-Source Zero-Shot Vision-and-Language Navigation with Hierarchical Memory System
-3. Spatial-VLN: Zero-Shot Vision-and-Language Navigation With Explicit Spatial Perception and Exploration
-4. SpatialNav: Leveraging Spatial Scene Graphs for Zero-Shot Vision-and-Language Navigation
-5. SeqWalker: Sequential-Horizon Vision-and-Language Navigation with Hierarchical Planning
-6. VLN-Zero: Rapid Exploration and Cache-Enabled Neurosymbolic Vision-Language Planning for Zero-Shot Transfer in Robot Navigation
-7. GC-VLN: Instruction as Graph Constraints for Training-free Vision-and-Language Navigation
-8. HA-VLN: A Benchmark for Human-Aware Navigation in Discrete-Continuous Environments with Dynamic Multi-Human Interactions, Real-World Validation, and an Open Leaderboard
-9. Towards Long-Horizon Vision-Language Navigation: Platform, Benchmark and Method
-10. RoomTour3D: Geometry-Aware Video-Instruction Tuning for Embodied Navigation
+3. Let’s Reward Step-by-Step: Step-Aware Contrastive Alignment for Vision-Language Navigation in Continuous Environments
+4. Enhancing Vision-Language Navigation with Multimodal Event Knowledge from Real-World Indoor Tour Videos
+5. Spatial-VLN: Zero-Shot Vision-and-Language Navigation With Explicit Spatial Perception and Exploration
+6. SpatialNav: Leveraging Spatial Scene Graphs for Zero-Shot Vision-and-Language Navigation
+7. SeqWalker: Sequential-Horizon Vision-and-Language Navigation with Hierarchical Planning
+原因：属于长程多阶段 `SH IR2R-CE` 扩展设定的重要论文，更适合作为 hierarchical planning / progress / recovery 参考，而不是标准主榜 baseline。
+8. VLN-Zero: Rapid Exploration and Cache-Enabled Neurosymbolic Vision-Language Planning for Zero-Shot Transfer in Robot Navigation
+9. GC-VLN: Instruction as Graph Constraints for Training-free Vision-and-Language Navigation
+10. HA-VLN: A Benchmark for Human-Aware Navigation in Discrete-Continuous Environments with Dynamic Multi-Human Interactions, Real-World Validation, and an Open Leaderboard
+11. Towards Long-Horizon Vision-Language Navigation: Platform, Benchmark and Method
+12. RoomTour3D: Geometry-Aware Video-Instruction Tuning for Embodied Navigation
 
 ## 第四部分：当前不建议放进第一优先 shortlist，但可放在完整时间线大表里的
 

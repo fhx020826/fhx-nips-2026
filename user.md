@@ -27,6 +27,22 @@ bash -ic 'proxy >/dev/null; <command>'
    - SOCKS: `127.0.0.1:18991`
    - Mixed: `127.0.0.1:18993`
 
+## 论文调研与粗读维护
+
+1. 每次批量生成论文粗读时，都必须同步做事实核查，不允许只依据已有本地摘要或历史记忆直接写卡片。
+2. 事实核查必须优先使用外网来源，包括：
+   - arXiv / OpenReview / publisher / project page
+   - GitHub 仓库与 README
+   - 模型页、数据页、项目主页
+3. 读取 GitHub 相关内容时也必须视作外网访问，统一走代理。
+4. 每批粗读都要同时检查：
+   - 论文基本信息是否准确
+   - benchmark 可比性表述是否准确
+   - 代码 / 项目页 / checkpoint 状态是否准确
+   - 是否应纳入内部高质量论文列表
+5. 如果论文已经在 `docs/paper_quality_shortlist.md` 中，则必须同步复核该 shortlist 条目的日期、定位、优先用途和描述是否仍然正确。
+6. 对于 `sampled subset`、`pre-exploration`、`额外传感器`、`扩展 benchmark`、`非标准主榜设定` 等情况，必须在粗读与 shortlist 中显式标注，避免误导性横向比较。
+
 ## 环境隔离
 
 1. 所有 Python 代码与运行都使用独立 conda 环境。

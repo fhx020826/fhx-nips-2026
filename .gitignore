@@ -13,6 +13,8 @@ env/
 data/
 artifacts/
 tmp/
+tmp_papers/
+tmp_repos/
 outputs/
 results/
 runs/
